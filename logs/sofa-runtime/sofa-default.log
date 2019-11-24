@@ -1,0 +1,77 @@
+2019-11-05 17:13:44,813 INFO  main                             - SOFABoot Runtime Starting!
+2019-11-05 17:13:58,613 INFO  main                             - Registering component: reference:javax.sql.DataSource:#105664
+2019-11-05 17:13:58,614 INFO  main                             -  >>In Binding [jvm] Begins - javax.sql.DataSource.
+2019-11-05 17:13:58,621 INFO  main                             -  >>In Binding [jvm] Ends - javax.sql.DataSource.
+2019-11-05 17:13:58,622 INFO  main                             - Registering component: reference:NewsReadService:#414599042
+2019-11-05 17:13:58,622 INFO  main                             -  >>In Binding [jvm] Begins - NewsReadService.
+2019-11-05 17:13:58,625 INFO  main                             -  >>In Binding [jvm] Ends - NewsReadService.
+2019-11-05 17:13:58,625 INFO  main                             - Registering component: reference:NewsWriteService:#414599042
+2019-11-05 17:13:58,625 INFO  main                             -  >>In Binding [jvm] Begins - NewsWriteService.
+2019-11-05 17:13:58,628 INFO  main                             -  >>In Binding [jvm] Ends - NewsWriteService.
+2019-11-05 17:13:59,736 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
+2019-11-05 17:13:59,753 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
+2019-11-05 17:13:59,753 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++
+2019-11-05 17:13:59,755 INFO  main                             - 
+All activated module list(3) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-biz-service-impl
+  └─ fundproduct-common-dal
+
+Modules that could install(3) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-common-dal
+  └─ fundproduct-biz-service-impl
+
+2019-11-05 17:13:59,759 INFO  main                             - Start install fundproducts module: com.sdu.fund.sample.standard.biz.shared
+2019-11-05 17:14:00,126 INFO  main                             - Start install fundproducts module: fundproduct-common-dal
+2019-11-05 17:14:00,174 INFO  main                             - Start install fundproducts module: fundproduct-biz-service-impl
+2019-11-05 17:14:00,211 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared - Begin refresh Spring Application Context of module com.sdu.fund.sample.standard.biz.shared of application fundproduct.
+2019-11-05 17:14:00,211 INFO  sofa-module-start-fundproduct-common-dal - Begin refresh Spring Application Context of module fundproduct-common-dal of application fundproduct.
+2019-11-05 17:14:00,267 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared - Registering component: reference:NewsManageDao:#414599042
+2019-11-05 17:14:00,267 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared -  >>In Binding [jvm] Begins - NewsManageDao.
+2019-11-05 17:14:00,271 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared -  >>In Binding [jvm] Ends - NewsManageDao.
+2019-11-05 17:14:00,291 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared - Registering component: service:NewsReadService
+2019-11-05 17:14:00,292 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared -  <<PreOut Binding [jvm] Begins - NewsReadService.
+2019-11-05 17:14:00,292 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared -  <<PreOut Binding [jvm] Ends - NewsReadService.
+2019-11-05 17:14:00,292 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared -  <<Out Binding [jvm] Begins - NewsReadService.
+2019-11-05 17:14:00,292 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared -  <<Out Binding [jvm] Ends - NewsReadService.
+2019-11-05 17:14:00,292 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared - Register Service - NewsReadService
+2019-11-05 17:14:00,793 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:javax.sql.DataSource
+2019-11-05 17:14:00,793 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - javax.sql.DataSource.
+2019-11-05 17:14:00,793 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - javax.sql.DataSource.
+2019-11-05 17:14:00,793 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - javax.sql.DataSource.
+2019-11-05 17:14:00,793 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - javax.sql.DataSource.
+2019-11-05 17:14:00,793 INFO  sofa-module-start-fundproduct-common-dal - Register Service - javax.sql.DataSource
+2019-11-05 17:14:00,801 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:NewsManageDao
+2019-11-05 17:14:00,801 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - NewsManageDao.
+2019-11-05 17:14:00,801 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - NewsManageDao.
+2019-11-05 17:14:00,801 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - NewsManageDao.
+2019-11-05 17:14:00,801 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - NewsManageDao.
+2019-11-05 17:14:00,801 INFO  sofa-module-start-fundproduct-common-dal - Register Service - NewsManageDao
+2019-11-05 17:14:00,806 INFO  sofa-module-start-fundproduct-biz-service-impl - Begin refresh Spring Application Context of module fundproduct-biz-service-impl of application fundproduct.
+2019-11-05 17:14:00,845 INFO  sofa-module-start-fundproduct-biz-service-impl - Registering component: service:NewsWriteService
+2019-11-05 17:14:00,846 INFO  sofa-module-start-fundproduct-biz-service-impl -  <<PreOut Binding [jvm] Begins - NewsWriteService.
+2019-11-05 17:14:00,846 INFO  sofa-module-start-fundproduct-biz-service-impl -  <<PreOut Binding [jvm] Ends - NewsWriteService.
+2019-11-05 17:14:00,846 INFO  sofa-module-start-fundproduct-biz-service-impl -  <<Out Binding [jvm] Begins - NewsWriteService.
+2019-11-05 17:14:00,846 INFO  sofa-module-start-fundproduct-biz-service-impl -  <<Out Binding [jvm] Ends - NewsWriteService.
+2019-11-05 17:14:00,846 INFO  sofa-module-start-fundproduct-biz-service-impl - Register Service - NewsWriteService
+2019-11-05 17:14:00,851 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct End +++++++++++++++++
+2019-11-05 17:14:00,851 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct Start +++++++++++++++++
+2019-11-05 17:14:00,854 INFO  main                             - 
+Spring context initialize success module list(3) >>>>>>> [totalTime = 726 ms, realTime = 638 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [90 ms]
+  │    `---/usr/local/mavenProject/sofa-boot-guides/fundproduct/app/biz/shared/target/classes/META-INF/spring/biz-shared-service.xml
+  ├─ fundproduct-common-dal [592 ms]
+  │    `---/usr/local/mavenProject/sofa-boot-guides/fundproduct/app/common/dal/target/classes/META-INF/spring/common-dal.xml
+  └─ fundproduct-biz-service-impl [44 ms]
+       `---/usr/local/mavenProject/sofa-boot-guides/fundproduct/app/biz/service-impl/target/classes/META-INF/spring/biz-service-impl.xml
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(3) >>>>>>> [totalTime = 726 ms, realTime = 638 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [90 ms]
+  ├─ fundproduct-common-dal [592 ms]
+  │    `---com.zaxxer.hikari.HikariDataSource (simpleDataSource)	[522 ms]
+  └─ fundproduct-biz-service-impl [44 ms]
+
+2019-11-05 17:14:00,854 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct End +++++++++++++++++

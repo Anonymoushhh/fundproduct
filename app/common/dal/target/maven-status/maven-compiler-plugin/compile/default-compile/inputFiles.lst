@@ -1,0 +1,9 @@
+/usr/local/mavenProject/sofa-boot-guides/sofaboot-sample-standard/app/common/dal/src/main/java/com/sdu/fund/common/dal/dao/fundArchiveDao.java
+/usr/local/mavenProject/sofa-boot-guides/sofaboot-sample-standard/app/common/dal/src/main/java/com/sdu/fund/common/dal/entity/fundArchiveDo.java
+/usr/local/mavenProject/sofa-boot-guides/sofaboot-sample-standard/app/common/dal/src/main/java/com/sdu/fund/common/dal/entity/fundManagerDo.java
+/usr/local/mavenProject/sofa-boot-guides/sofaboot-sample-standard/app/common/dal/src/main/java/com/sdu/fund/common/dal/dao/fundCompanyDao.java
+/usr/local/mavenProject/sofa-boot-guides/sofaboot-sample-standard/app/common/dal/src/main/java/com/sdu/fund/common/dal/util/GenMain.java
+/usr/local/mavenProject/sofa-boot-guides/sofaboot-sample-standard/app/common/dal/src/main/java/com/sdu/fund/common/dal/dao/fundDataDao.java
+/usr/local/mavenProject/sofa-boot-guides/sofaboot-sample-standard/app/common/dal/src/main/java/com/sdu/fund/common/dal/dao/fundManagerDao.java
+/usr/local/mavenProject/sofa-boot-guides/sofaboot-sample-standard/app/common/dal/src/main/java/com/sdu/fund/common/dal/entity/fundDataDo.java
+/usr/local/mavenProject/sofa-boot-guides/sofaboot-sample-standard/app/common/dal/src/main/java/com/sdu/fund/common/dal/entity/fundCompanyDo.java
