@@ -20,6 +20,7 @@
         <module>app/biz/shared</module>
         <module>app/core/model</module>
         <module>app/common/util</module>
+        <module>app/core/service</module>
     </modules>
 
     <dependencyManagement>
