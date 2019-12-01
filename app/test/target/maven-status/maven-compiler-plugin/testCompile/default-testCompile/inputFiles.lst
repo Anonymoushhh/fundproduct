@@ -1,4 +1,1 @@
-/usr/local/mavenProject/sofa-boot-guides/sofaboot-sample-standard/app/test/src/test/java/com/sdu/fund/test/base/AbstractTestBase.java
-/usr/local/mavenProject/sofa-boot-guides/sofaboot-sample-standard/app/test/src/test/java/com/sdu/fund/test/request/CrawingRequest.java
-/usr/local/mavenProject/sofa-boot-guides/sofaboot-sample-standard/app/test/src/test/java/com/sdu/fund/test/service/DataCrawlingService.java
-/usr/local/mavenProject/sofa-boot-guides/sofaboot-sample-standard/app/test/src/test/java/com/sdu/fund/test/serviceImpl/FundCompanyDataCrawlingServiceImpl.java
+/usr/local/mavenProject/fund/app/test/src/test/java/com/sdu/fund/test/base/AbstractTestBase.java

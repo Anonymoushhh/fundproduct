@@ -1,0 +1,8 @@
+com/sdu/fund/core/request/CrawingRequest.class
+com/sdu/fund/core/service/DataCrawlingService.class
+com/sdu/fund/core/factory/DataCrawingFactory.class
+com/sdu/fund/core/repository/Repository.class
+com/sdu/fund/core/result/CrawingResult.class
+com/sdu/fund/core/repository/FundCompanyRepository.class
+com/sdu/fund/core/serviceImpl/FundCompanyDataCrawlingServiceImpl.class
+com/sdu/fund/core/converter/FundCompanyConverter.class

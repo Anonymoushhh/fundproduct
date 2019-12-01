@@ -44,14 +44,14 @@
                 type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象
                 type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
         -->
-        <javaClientGenerator targetPackage="com.sdu.fund.common.dal.dao"
+        <javaClientGenerator targetPackage="com.sdu.fund.common.dal.mapper"
                              targetProject="app/common/dal/src/main/java" type="XMLMAPPER">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
 
         <!-- 列出要生成代码的所有表，这里配置的是不生成Example文件 -->
-        <table tableName="fundArchive" domainObjectName="fundArchiveDo" mapperName="fundArchiveDao"
+        <table tableName="fundArchive" domainObjectName="FundArchiveDo" mapperName="FundArchiveMapper"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false" >
             <property name="useActualColumnNames" value="false"/>
@@ -68,17 +68,17 @@
          -->
 
         </table>
-        <table tableName="fundCompany" domainObjectName="fundCompanyDo" mapperName="fundCompanyDao"
+        <table tableName="fundCompany" domainObjectName="FundCompanyDo" mapperName="FundCompanyMapper"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false" >
             <property name="useActualColumnNames" value="false"/>
         </table>
-        <table tableName="fundData" domainObjectName="fundDataDo" mapperName="fundDataDao"
+        <table tableName="fundData" domainObjectName="FundDataDo" mapperName="FundDataMapper"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false" >
             <property name="useActualColumnNames" value="false"/>
         </table>
-        <table tableName="fundManager" domainObjectName="fundManagerDo" mapperName="fundManagerDao"
+        <table tableName="fundManager" domainObjectName="FundManagerDo" mapperName="FundManagerMapper"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false" >
             <property name="useActualColumnNames" value="false"/>

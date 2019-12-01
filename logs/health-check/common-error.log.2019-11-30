@@ -1,0 +1,22 @@
+2019-11-30 21:35:03,073 ERROR main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry; fail details:{"com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}; strict mode:true
+2019-11-30 21:35:23,189 ERROR main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 20 retry; fail details:{"reference:com.sdu.fund.core.serviceImpl.FundCompanyDataCrawlingServiceImpl:#414599042":"jvm#can not find corresponding jvm service"}; strict mode:true
+2019-11-30 21:35:23,189 ERROR main                             - SOFABoot HealthChecker readiness check result: failed.
+2019-11-30 21:35:23,197 ERROR main                             - HealthIndicator[sofaModuleHealthIndicator] readiness check fail; the status is: DOWN; the detail is: {"com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}.
+2019-11-30 21:35:23,198 ERROR main                             - SOFABoot HealthIndicator readiness check result: failed.
+2019-11-30 21:35:23,200 ERROR main                             - Readiness check result: fail
+2019-11-30 21:41:24,502 ERROR main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry; fail details:{"com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}; strict mode:true
+2019-11-30 21:41:24,503 ERROR main                             - SOFABoot HealthChecker readiness check result: failed.
+2019-11-30 21:41:24,505 ERROR main                             - HealthIndicator[sofaModuleHealthIndicator] readiness check fail; the status is: DOWN; the detail is: {"com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}.
+2019-11-30 21:41:24,506 ERROR main                             - SOFABoot HealthIndicator readiness check result: failed.
+2019-11-30 21:41:24,507 ERROR main                             - Readiness check result: fail
+2019-11-30 21:45:02,200 ERROR main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry; fail details:{"com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}; strict mode:true
+2019-11-30 21:45:02,200 ERROR main                             - SOFABoot HealthChecker readiness check result: failed.
+2019-11-30 21:45:02,202 ERROR main                             - HealthIndicator[sofaModuleHealthIndicator] readiness check fail; the status is: DOWN; the detail is: {"com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}.
+2019-11-30 21:45:02,203 ERROR main                             - SOFABoot HealthIndicator readiness check result: failed.
+2019-11-30 21:45:02,204 ERROR main                             - Readiness check result: fail
+2019-11-30 22:18:45,630 ERROR main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry; fail details:{"fundproduct-core-service":"passed","com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}; strict mode:true
+2019-11-30 22:19:05,709 ERROR main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 20 retry; fail details:{"service:com.sdu.fund.core.service.DataCrawlingService":"passed","reference:com.sdu.fund.common.dal.dao.FundCompanyDao:#414599042":"jvm#can not find corresponding jvm service","service:com.sdu.fund.core.repository.Repository":"passed"}; strict mode:true
+2019-11-30 22:19:05,709 ERROR main                             - SOFABoot HealthChecker readiness check result: failed.
+2019-11-30 22:19:05,711 ERROR main                             - HealthIndicator[sofaModuleHealthIndicator] readiness check fail; the status is: DOWN; the detail is: {"fundproduct-core-service":"passed","com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}.
+2019-11-30 22:19:05,711 ERROR main                             - SOFABoot HealthIndicator readiness check result: failed.
+2019-11-30 22:19:05,712 ERROR main                             - Readiness check result: fail

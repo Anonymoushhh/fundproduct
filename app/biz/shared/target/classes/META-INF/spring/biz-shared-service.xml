@@ -7,9 +7,5 @@
             http://sofastack.io/schema/sofaboot http://sofastack.io/schema/sofaboot.xsd"
        default-autowire="byName">
 
-    <bean class="com.sdu.fund.service.shared.NewsReadServiceImpl" id="newReadService"/>
-    <sofa:service ref="newReadService" interface="com.sdu.fund.facade.NewsReadService">
-        <sofa:binding.jvm/>
-    </sofa:service>
 
 </beans>

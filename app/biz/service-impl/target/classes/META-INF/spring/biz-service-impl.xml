@@ -7,9 +7,5 @@
             http://sofastack.io/schema/sofaboot http://sofastack.io/schema/sofaboot.xsd"
        default-autowire="byName">
 
-    <bean class="com.sdu.fund.service.impl.NewsWriteServiceImpl" id="newWriteService"/>
-    <sofa:service ref="newWriteService" interface="com.sdu.fund.facade.NewsWriteService">
-        <sofa:binding.jvm/>
-    </sofa:service>
 
 </beans>

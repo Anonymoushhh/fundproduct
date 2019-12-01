@@ -1,0 +1,100 @@
+2019-11-30 21:35:03,038 INFO  main                             - Found 2 HealthChecker implementation:sofaModuleHealthChecker,sofaComponentHealthChecker
+2019-11-30 21:35:03,042 INFO  main                             - Found 4 HealthIndicator implementation:sofaModuleHealthIndicator,sofaBootHealthIndicator,sofaComponentHealthIndicator,diskSpaceHealthIndicator
+2019-11-30 21:35:03,043 INFO  main                             - Found 0 ReadinessCheckCallback implementation: 
+2019-11-30 21:35:03,044 INFO  main                             - Begin SOFABoot HealthChecker readiness check.
+2019-11-30 21:35:03,047 INFO  main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry.
+2019-11-30 21:35:03,073 ERROR main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry; fail details:{"com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}; strict mode:true
+2019-11-30 21:35:03,078 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 0 retry.
+2019-11-30 21:35:04,080 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 1 retry.
+2019-11-30 21:35:05,086 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 2 retry.
+2019-11-30 21:35:06,093 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 3 retry.
+2019-11-30 21:35:07,094 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 4 retry.
+2019-11-30 21:35:08,101 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 5 retry.
+2019-11-30 21:35:09,108 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 6 retry.
+2019-11-30 21:35:10,115 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 7 retry.
+2019-11-30 21:35:11,122 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 8 retry.
+2019-11-30 21:35:12,129 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 9 retry.
+2019-11-30 21:35:13,136 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 10 retry.
+2019-11-30 21:35:14,142 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 11 retry.
+2019-11-30 21:35:15,146 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 12 retry.
+2019-11-30 21:35:16,152 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 13 retry.
+2019-11-30 21:35:17,154 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 14 retry.
+2019-11-30 21:35:18,162 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 15 retry.
+2019-11-30 21:35:19,168 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 16 retry.
+2019-11-30 21:35:20,175 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 17 retry.
+2019-11-30 21:35:21,179 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 18 retry.
+2019-11-30 21:35:22,186 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 19 retry.
+2019-11-30 21:35:23,189 ERROR main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 20 retry; fail details:{"reference:com.sdu.fund.core.serviceImpl.FundCompanyDataCrawlingServiceImpl:#414599042":"jvm#can not find corresponding jvm service"}; strict mode:true
+2019-11-30 21:35:23,189 ERROR main                             - SOFABoot HealthChecker readiness check result: failed.
+2019-11-30 21:35:23,192 INFO  main                             - Begin SOFABoot HealthIndicator readiness check.
+2019-11-30 21:35:23,197 ERROR main                             - HealthIndicator[sofaModuleHealthIndicator] readiness check fail; the status is: DOWN; the detail is: {"com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}.
+2019-11-30 21:35:23,198 INFO  main                             - HealthIndicator[diskSpaceHealthIndicator] readiness check success.
+2019-11-30 21:35:23,198 ERROR main                             - SOFABoot HealthIndicator readiness check result: failed.
+2019-11-30 21:35:23,198 INFO  main                             - Begin ReadinessCheckCallback readiness check
+2019-11-30 21:35:23,200 INFO  main                             - ReadinessCheckCallback readiness check result: success.
+2019-11-30 21:35:23,200 ERROR main                             - Readiness check result: fail
+2019-11-30 21:41:24,465 INFO  main                             - Found 2 HealthChecker implementation:sofaModuleHealthChecker,sofaComponentHealthChecker
+2019-11-30 21:41:24,470 INFO  main                             - Found 4 HealthIndicator implementation:sofaModuleHealthIndicator,sofaBootHealthIndicator,sofaComponentHealthIndicator,diskSpaceHealthIndicator
+2019-11-30 21:41:24,472 INFO  main                             - Found 0 ReadinessCheckCallback implementation: 
+2019-11-30 21:41:24,472 INFO  main                             - Begin SOFABoot HealthChecker readiness check.
+2019-11-30 21:41:24,474 INFO  main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry.
+2019-11-30 21:41:24,502 ERROR main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry; fail details:{"com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}; strict mode:true
+2019-11-30 21:41:24,503 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check success with 0 retry.
+2019-11-30 21:41:24,503 ERROR main                             - SOFABoot HealthChecker readiness check result: failed.
+2019-11-30 21:41:24,504 INFO  main                             - Begin SOFABoot HealthIndicator readiness check.
+2019-11-30 21:41:24,505 ERROR main                             - HealthIndicator[sofaModuleHealthIndicator] readiness check fail; the status is: DOWN; the detail is: {"com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}.
+2019-11-30 21:41:24,506 INFO  main                             - HealthIndicator[diskSpaceHealthIndicator] readiness check success.
+2019-11-30 21:41:24,506 ERROR main                             - SOFABoot HealthIndicator readiness check result: failed.
+2019-11-30 21:41:24,506 INFO  main                             - Begin ReadinessCheckCallback readiness check
+2019-11-30 21:41:24,507 INFO  main                             - ReadinessCheckCallback readiness check result: success.
+2019-11-30 21:41:24,507 ERROR main                             - Readiness check result: fail
+2019-11-30 21:45:02,168 INFO  main                             - Found 2 HealthChecker implementation:sofaModuleHealthChecker,sofaComponentHealthChecker
+2019-11-30 21:45:02,170 INFO  main                             - Found 4 HealthIndicator implementation:sofaModuleHealthIndicator,sofaBootHealthIndicator,sofaComponentHealthIndicator,diskSpaceHealthIndicator
+2019-11-30 21:45:02,172 INFO  main                             - Found 0 ReadinessCheckCallback implementation: 
+2019-11-30 21:45:02,172 INFO  main                             - Begin SOFABoot HealthChecker readiness check.
+2019-11-30 21:45:02,175 INFO  main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry.
+2019-11-30 21:45:02,200 ERROR main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry; fail details:{"com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}; strict mode:true
+2019-11-30 21:45:02,200 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check success with 0 retry.
+2019-11-30 21:45:02,200 ERROR main                             - SOFABoot HealthChecker readiness check result: failed.
+2019-11-30 21:45:02,201 INFO  main                             - Begin SOFABoot HealthIndicator readiness check.
+2019-11-30 21:45:02,202 ERROR main                             - HealthIndicator[sofaModuleHealthIndicator] readiness check fail; the status is: DOWN; the detail is: {"com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}.
+2019-11-30 21:45:02,203 INFO  main                             - HealthIndicator[diskSpaceHealthIndicator] readiness check success.
+2019-11-30 21:45:02,203 ERROR main                             - SOFABoot HealthIndicator readiness check result: failed.
+2019-11-30 21:45:02,203 INFO  main                             - Begin ReadinessCheckCallback readiness check
+2019-11-30 21:45:02,204 INFO  main                             - ReadinessCheckCallback readiness check result: success.
+2019-11-30 21:45:02,204 ERROR main                             - Readiness check result: fail
+2019-11-30 22:18:45,587 INFO  main                             - Found 2 HealthChecker implementation:sofaModuleHealthChecker,sofaComponentHealthChecker
+2019-11-30 22:18:45,589 INFO  main                             - Found 4 HealthIndicator implementation:sofaModuleHealthIndicator,sofaBootHealthIndicator,sofaComponentHealthIndicator,diskSpaceHealthIndicator
+2019-11-30 22:18:45,590 INFO  main                             - Found 0 ReadinessCheckCallback implementation: 
+2019-11-30 22:18:45,591 INFO  main                             - Begin SOFABoot HealthChecker readiness check.
+2019-11-30 22:18:45,595 INFO  main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry.
+2019-11-30 22:18:45,630 ERROR main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry; fail details:{"fundproduct-core-service":"passed","com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}; strict mode:true
+2019-11-30 22:18:45,632 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 0 retry.
+2019-11-30 22:18:46,638 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 1 retry.
+2019-11-30 22:18:47,639 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 2 retry.
+2019-11-30 22:18:48,642 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 3 retry.
+2019-11-30 22:18:49,647 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 4 retry.
+2019-11-30 22:18:50,653 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 5 retry.
+2019-11-30 22:18:51,657 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 6 retry.
+2019-11-30 22:18:52,663 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 7 retry.
+2019-11-30 22:18:53,669 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 8 retry.
+2019-11-30 22:18:54,675 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 9 retry.
+2019-11-30 22:18:55,682 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 10 retry.
+2019-11-30 22:18:56,687 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 11 retry.
+2019-11-30 22:18:57,692 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 12 retry.
+2019-11-30 22:18:58,692 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 13 retry.
+2019-11-30 22:18:59,693 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 14 retry.
+2019-11-30 22:19:00,694 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 15 retry.
+2019-11-30 22:19:01,698 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 16 retry.
+2019-11-30 22:19:02,704 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 17 retry.
+2019-11-30 22:19:03,705 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 18 retry.
+2019-11-30 22:19:04,707 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 19 retry.
+2019-11-30 22:19:05,709 ERROR main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 20 retry; fail details:{"service:com.sdu.fund.core.service.DataCrawlingService":"passed","reference:com.sdu.fund.common.dal.dao.FundCompanyDao:#414599042":"jvm#can not find corresponding jvm service","service:com.sdu.fund.core.repository.Repository":"passed"}; strict mode:true
+2019-11-30 22:19:05,709 ERROR main                             - SOFABoot HealthChecker readiness check result: failed.
+2019-11-30 22:19:05,710 INFO  main                             - Begin SOFABoot HealthIndicator readiness check.
+2019-11-30 22:19:05,711 ERROR main                             - HealthIndicator[sofaModuleHealthIndicator] readiness check fail; the status is: DOWN; the detail is: {"fundproduct-core-service":"passed","com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}.
+2019-11-30 22:19:05,711 INFO  main                             - HealthIndicator[diskSpaceHealthIndicator] readiness check success.
+2019-11-30 22:19:05,711 ERROR main                             - SOFABoot HealthIndicator readiness check result: failed.
+2019-11-30 22:19:05,711 INFO  main                             - Begin ReadinessCheckCallback readiness check
+2019-11-30 22:19:05,712 INFO  main                             - ReadinessCheckCallback readiness check result: success.
+2019-11-30 22:19:05,712 ERROR main                             - Readiness check result: fail

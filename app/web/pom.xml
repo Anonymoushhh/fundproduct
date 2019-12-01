@@ -37,6 +37,10 @@
             <groupId>com.sdu.fund</groupId>
             <artifactId>fundproduct-common-util</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.sdu.fund</groupId>
+            <artifactId>fundproduct-core-service</artifactId>
+        </dependency>
 
         <!-- spring web dependency -->
         <dependency>

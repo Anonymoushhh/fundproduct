@@ -7,14 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fundproduct-common-service-facade" />
-        <module name="fundproduct-test" />
         <module name="fundproduct-web" />
-        <module name="fundproduct-biz-shared" />
         <module name="fundproduct-common-util" />
+        <module name="fundproduct-biz-shared" />
+        <module name="fundproduct-test" />
         <module name="fundproduct-core-model" />
         <module name="fundproduct-common-dal" />
         <module name="fundproduct-biz-service-impl" />
+        <module name="fundproduct-core-service" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="PREFER_TARGET_JDK_COMPILER" value="false" />
   </component>
 </project>

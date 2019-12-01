@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:sofa="http://sofastack.io/schema/sofaboot"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://sofastack.io/schema/sofaboot http://sofastack.io/schema/sofaboot.xsd"
+       default-autowire="byName">
+
+    <bean id="fundCompanyRepository" class="com.sdu.fund.core.repository.FundCompanyRepository"/>
+<!--    <sofa:service ref="fundCompanyRepository" interface="com.sdu.fund.core.repository.Repository">-->
+<!--        <sofa:binding.jvm/>-->
+<!--    </sofa:service>-->
+
+    <bean class="com.sdu.fund.core.serviceImpl.FundCompanyDataCrawlingServiceImpl" id="fundCompanyDataCrawlingService"/>
+    <sofa:service ref="fundCompanyDataCrawlingService" interface="com.sdu.fund.core.service.DataCrawlingService">
+        <sofa:binding.jvm/>
+    </sofa:service>
+
+</beans>
