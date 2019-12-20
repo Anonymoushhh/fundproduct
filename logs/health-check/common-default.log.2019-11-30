@@ -24,7 +24,7 @@
 2019-11-30 21:35:20,175 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 17 retry.
 2019-11-30 21:35:21,179 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 18 retry.
 2019-11-30 21:35:22,186 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 19 retry.
-2019-11-30 21:35:23,189 ERROR main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 20 retry; fail details:{"reference:com.sdu.fund.core.serviceImpl.FundCompanyDataCrawlingServiceImpl:#414599042":"jvm#can not find corresponding jvm service"}; strict mode:true
+2019-11-30 21:35:23,189 ERROR main                             - HealthChecker[sofaComponentHealthChecker] readiness check fail with 20 retry; fail details:{"reference:com.sdu.fund.core.serviceImpl.FundCompanyCrawlingService:#414599042":"jvm#can not find corresponding jvm service"}; strict mode:true
 2019-11-30 21:35:23,189 ERROR main                             - SOFABoot HealthChecker readiness check result: failed.
 2019-11-30 21:35:23,192 INFO  main                             - Begin SOFABoot HealthIndicator readiness check.
 2019-11-30 21:35:23,197 ERROR main                             - HealthIndicator[sofaModuleHealthIndicator] readiness check fail; the status is: DOWN; the detail is: {"com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}.

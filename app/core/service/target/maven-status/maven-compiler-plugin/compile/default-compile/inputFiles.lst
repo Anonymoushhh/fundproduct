@@ -1,8 +1,14 @@
+/usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/constants/FundArchiveKey.java
 /usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/factory/DataCrawingFactory.java
-/usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/service/DataCrawlingService.java
+/usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/repository/FundArchiveRepository.java
 /usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/repository/Repository.java
+/usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/result/CrawingResult.java
+/usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/constants/Url.java
+/usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/serviceImpl/FundCrawlingService.java
+/usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/serviceImpl/FundCompanyDataCrawlingService.java
+/usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/service/DataCrawlingService.java
 /usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/repository/FundCompanyRepository.java
 /usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/request/CrawingRequest.java
-/usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/result/CrawingResult.java
 /usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/converter/FundCompanyConverter.java
-/usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/serviceImpl/FundCompanyDataCrawlingServiceImpl.java
+/usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/converter/FundArchiveConverter.java
+/usr/local/mavenProject/fund/app/core/service/src/main/java/com/sdu/fund/core/serviceImpl/FundArchiveCrawlingService.java

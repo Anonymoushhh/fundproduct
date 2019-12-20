@@ -1,7 +1,7 @@
 2019-11-30 21:34:47,546 INFO  main                             - SOFABoot Runtime Starting!
-2019-11-30 21:35:01,356 INFO  main                             - Registering component: reference:com.sdu.fund.core.serviceImpl.FundCompanyDataCrawlingServiceImpl:#414599042
-2019-11-30 21:35:01,356 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.serviceImpl.FundCompanyDataCrawlingServiceImpl.
-2019-11-30 21:35:01,403 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.serviceImpl.FundCompanyDataCrawlingServiceImpl.
+2019-11-30 21:35:01,356 INFO  main                             - Registering component: reference:com.sdu.fund.core.serviceImpl.FundCompanyCrawlingService:#414599042
+2019-11-30 21:35:01,356 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.serviceImpl.FundCompanyCrawlingService.
+2019-11-30 21:35:01,403 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.serviceImpl.FundCompanyCrawlingService.
 2019-11-30 21:35:02,605 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
 2019-11-30 21:35:02,629 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
 2019-11-30 21:35:02,629 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++

@@ -20,7 +20,7 @@ public class FundCompany {
     private Date establishDate;
 
     /* 基金数量*/
-    private int fundAmount;
+    private Integer fundAmount;
 
     /* 总经理*/
     private String manager;
@@ -35,7 +35,7 @@ public class FundCompany {
     private String managementScale;
 
     /* 评级*/
-    private int grade;
+    private Integer grade;
 
     /* 数据更新日期*/
     private Date updateTime;

@@ -1,6 +1,7 @@
 package com.sdu.fund.common.util;
 
 import com.sdu.fund.common.enums.RequestMethodEnum;
+import com.sdu.fund.common.exception.HttpException;
 import org.apache.http.Consts;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
@@ -18,11 +19,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import static com.sdu.fund.common.enums.RequestMethodEnum.GET;
 
 /**
  * @program: fundproduct
- * @description: http工具类
+ * @description: http工具类,请求失败抛异常，上层处理
  * @author: anonymous
  * @create: 2019-11-23 22:10
  **/
@@ -30,36 +30,56 @@ public class HttpUtil {
 
     private static final CloseableHttpClient httpclient = HttpClients.createDefault();
 
-    public static String send(String url, RequestMethodEnum requestMethodEnum) {
+    public static String send(String url, RequestMethodEnum requestMethodEnum) throws HttpException {
+        String result = null;
         try {
             switch (requestMethodEnum) {
                 case GET:
-                    return sendGet(url);
+                    result = sendGet(url);
+                    if(result!=null){
+                        return result;
+                    }else{
+                        throw new HttpException("请求无结果！");
+                    }
                 case POST:
-                    return sendPost(url);
+                    result = sendPost(url);
+                    if(result!=null){
+                        return result;
+                    }else{
+                        throw new HttpException("请求无结果！");
+                    }
                 default:
-                    throw new IllegalStateException("Unexpected value: " + requestMethodEnum);
+                    throw new HttpException("未知请求方法！");
             }
-        } catch (IllegalStateException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            throw new HttpException(e.getMessage());
         }
-        return null;
     }
 
-    public static String send(String url, RequestMethodEnum requestMethodEnum, Map<String, String> map) {
+    public static String send(String url, RequestMethodEnum requestMethodEnum, Map<String, String> map) throws HttpException {
+        String result = null;
         try {
             switch (requestMethodEnum) {
                 case GET:
-                    return sendGet(url);
+                    result = sendGet(url);
+                    if(result!=null){
+                        return result;
+                    }else{
+                        throw new HttpException("请求无结果！");
+                    }
                 case POST:
-                    return sendPost(url, map);
+                    result = sendPost(url,map);
+                    if(result!=null){
+                        return result;
+                    }else{
+                        throw new HttpException("请求无结果！");
+                    }
                 default:
-                    throw new IllegalStateException("Unexpected value: " + requestMethodEnum);
+                    throw new HttpException("Unexpected value: " + requestMethodEnum);
             }
-        } catch (IllegalStateException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            throw new HttpException(e.getMessage());
         }
-        return null;
     }
 
     /**
@@ -68,29 +88,27 @@ public class HttpUtil {
      * @param url
      * @return
      */
-    private static String sendGet(String url) {
+    private static String sendGet(String url) throws HttpException {
 
         HttpGet httpget = new HttpGet(url);
         httpget.addHeader("Content-Type", "application/json; charset=utf-8");
         CloseableHttpResponse response = null;
-        try {
-            response = httpclient.execute(httpget);
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
         String result = null;
         try {
-            HttpEntity entity = response.getEntity();
-            if (entity != null) {
-                result = EntityUtils.toString(entity, "UTF-8");
+            response = httpclient.execute(httpget);
+            if (response != null&&response.getStatusLine().getStatusCode()==200) {
+                HttpEntity entity = response.getEntity();
+                if (entity != null) {
+                    result = EntityUtils.toString(entity, "UTF-8");
+                }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new HttpException(e.getMessage());
         } finally {
             try {
                 response.close();
             } catch (IOException e) {
-                e.printStackTrace();
+                throw new HttpException(e.getMessage());
             }
         }
         return result;
@@ -103,7 +121,7 @@ public class HttpUtil {
      * @param map
      * @return
      */
-    private static String sendPost(String url, Map<String, String> map) {
+    private static String sendPost(String url, Map<String, String> map) throws HttpException {
         List<NameValuePair> formparams = new ArrayList<NameValuePair>();
         for (Map.Entry<String, String> entry : map.entrySet()) {
             formparams.add(new BasicNameValuePair(entry.getKey(), entry.getValue()));
@@ -113,17 +131,23 @@ public class HttpUtil {
         httppost.addHeader("Content-Type", "application/json; charset=utf-8");
         httppost.setEntity(entity);
         CloseableHttpResponse response = null;
-        try {
-            response = httpclient.execute(httppost);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        HttpEntity entity1 = response.getEntity();
         String result = null;
         try {
-            result = EntityUtils.toString(entity1, "UTF-8");
+            response = httpclient.execute(httppost);
+            if (response != null&&response.getStatusLine().getStatusCode()==200) {
+                HttpEntity entity1 = response.getEntity();
+                if (entity1 != null) {
+                    result = EntityUtils.toString(entity, "UTF-8");
+                }
+            }
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new HttpException(e.getMessage());
+        } finally {
+            try {
+                response.close();
+            } catch (IOException e) {
+                throw new HttpException(e.getMessage());
+            }
         }
         return result;
     }
@@ -134,21 +158,27 @@ public class HttpUtil {
      * @param url
      * @return
      */
-    private static String sendPost(String url) {
+    private static String sendPost(String url) throws HttpException {
         HttpPost httppost = new HttpPost(url);
         httppost.addHeader("Content-Type", "application/json; charset=utf-8");
         CloseableHttpResponse response = null;
-        try {
-            response = httpclient.execute(httppost);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        HttpEntity entity = response.getEntity();
         String result = null;
         try {
-            result = EntityUtils.toString(entity, "UTF-8");
+            response = httpclient.execute(httppost);
+            if (response != null&&response.getStatusLine().getStatusCode()==200) {
+                HttpEntity entity = response.getEntity();
+                if (entity != null) {
+                    result = EntityUtils.toString(entity, "UTF-8");
+                }
+            }
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new HttpException(e.getMessage());
+        } finally {
+            try {
+                response.close();
+            } catch (IOException e) {
+                throw new HttpException(e.getMessage());
+            }
         }
         return result;
 

@@ -1,0 +1,738 @@
+2019-12-05 19:48:51,158 INFO  main                             - SOFABoot Runtime Starting!
+2019-12-05 19:49:05,058 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:#414599042
+2019-12-05 19:49:05,058 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 19:49:05,063 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 19:49:06,365 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
+2019-12-05 19:49:06,383 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
+2019-12-05 19:49:06,384 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++
+2019-12-05 19:49:06,386 INFO  main                             - 
+All activated module list(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+Modules that could install(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+2019-12-05 19:49:06,392 INFO  main                             - Start install fundproducts module: com.sdu.fund.sample.standard.biz.shared
+2019-12-05 19:49:06,668 INFO  main                             - Start install fundproducts module: fundproduct-common-dal
+2019-12-05 19:49:06,851 INFO  main                             - Start install fundproducts module: fundproduct-biz-service-impl
+2019-12-05 19:49:06,869 INFO  main                             - Start install fundproducts module: fundproduct-core-service
+2019-12-05 19:49:06,916 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared - Begin refresh Spring Application Context of module com.sdu.fund.sample.standard.biz.shared of application fundproduct.
+2019-12-05 19:49:06,915 INFO  sofa-module-start-fundproduct-common-dal - Begin refresh Spring Application Context of module fundproduct-common-dal of application fundproduct.
+2019-12-05 19:49:07,682 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundCompanyDao
+2019-12-05 19:49:07,682 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 19:49:07,682 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 19:49:07,682 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 19:49:07,682 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 19:49:07,682 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundCompanyDao
+2019-12-05 19:49:07,696 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 19:49:07,696 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 19:49:07,696 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 19:49:07,696 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 19:49:07,696 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 19:49:07,696 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 19:49:07,707 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 19:49:07,707 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 19:49:07,707 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 19:49:07,707 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 19:49:07,707 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 19:49:07,707 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 19:49:07,719 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 19:49:07,719 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 19:49:07,719 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 19:49:07,719 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 19:49:07,719 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 19:49:07,719 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 19:49:07,724 INFO  sofa-module-start-fundproduct-biz-service-impl - Begin refresh Spring Application Context of module fundproduct-biz-service-impl of application fundproduct.
+2019-12-05 19:49:07,725 INFO  sofa-module-start-fundproduct-core-service - Begin refresh Spring Application Context of module fundproduct-core-service of application fundproduct.
+2019-12-05 19:49:07,763 INFO  sofa-module-start-fundproduct-core-service - Registering component: reference:com.sdu.fund.common.dal.dao.FundCompanyDao:#414599042
+2019-12-05 19:49:07,763 INFO  sofa-module-start-fundproduct-core-service -  >>In Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 19:49:07,767 INFO  sofa-module-start-fundproduct-core-service -  >>In Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 19:49:07,782 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 19:49:07,782 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 19:49:07,782 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 19:49:07,782 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 19:49:07,782 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 19:49:07,782 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 19:49:07,785 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct End +++++++++++++++++
+2019-12-05 19:49:07,785 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct Start +++++++++++++++++
+2019-12-05 19:49:07,787 INFO  main                             - 
+Spring context initialize success module list(4) >>>>>>> [totalTime = 957 ms, realTime = 868 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [58 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/shared/target/classes/META-INF/spring/biz-shared-service.xml
+  ├─ fundproduct-common-dal [805 ms]
+  │    `---/usr/local/mavenProject/fund/app/common/dal/target/classes/META-INF/spring/common-dal.xml
+  ├─ fundproduct-biz-service-impl [34 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/service-impl/target/classes/META-INF/spring/biz-service-impl.xml
+  └─ fundproduct-core-service [60 ms]
+       `---/usr/local/mavenProject/fund/app/core/service/target/classes/META-INF/spring/core-service.xml
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(4) >>>>>>> [totalTime = 957 ms, realTime = 868 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [58 ms]
+  ├─ fundproduct-common-dal [805 ms]
+  │    +---org.mybatis.spring.mapper.MapperScannerConfigurer	[636 ms]
+  │    `---org.mybatis.spring.SqlSessionFactoryBean (sqlSessionFactory)	[625 ms]
+  ├─ fundproduct-biz-service-impl [34 ms]
+  └─ fundproduct-core-service [60 ms]
+
+2019-12-05 19:49:07,787 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct End +++++++++++++++++
+2019-12-05 20:10:34,435 INFO  main                             - SOFABoot Runtime Starting!
+2019-12-05 20:10:47,834 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:#414599042
+2019-12-05 20:10:47,834 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:10:47,839 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:10:48,859 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:10:48,879 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
+2019-12-05 20:10:48,879 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:10:48,882 INFO  main                             - 
+All activated module list(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+Modules that could install(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+2019-12-05 20:10:48,890 INFO  main                             - Start install fundproducts module: com.sdu.fund.sample.standard.biz.shared
+2019-12-05 20:10:49,027 INFO  main                             - Start install fundproducts module: fundproduct-common-dal
+2019-12-05 20:10:49,174 INFO  main                             - Start install fundproducts module: fundproduct-biz-service-impl
+2019-12-05 20:10:49,196 INFO  main                             - Start install fundproducts module: fundproduct-core-service
+2019-12-05 20:10:49,263 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared - Begin refresh Spring Application Context of module com.sdu.fund.sample.standard.biz.shared of application fundproduct.
+2019-12-05 20:10:49,263 INFO  sofa-module-start-fundproduct-common-dal - Begin refresh Spring Application Context of module fundproduct-common-dal of application fundproduct.
+2019-12-05 20:10:49,955 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundCompanyDao
+2019-12-05 20:10:49,955 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:10:49,956 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:10:49,956 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:10:49,956 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:10:49,956 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundCompanyDao
+2019-12-05 20:10:49,973 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 20:10:49,973 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:10:49,974 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:10:49,974 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:10:49,974 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:10:49,974 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 20:10:49,989 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 20:10:49,990 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:10:49,990 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:10:49,990 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:10:49,990 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:10:49,990 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 20:10:50,007 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 20:10:50,007 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:10:50,007 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:10:50,007 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:10:50,007 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:10:50,007 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 20:10:50,014 INFO  sofa-module-start-fundproduct-biz-service-impl - Begin refresh Spring Application Context of module fundproduct-biz-service-impl of application fundproduct.
+2019-12-05 20:10:50,014 INFO  sofa-module-start-fundproduct-core-service - Begin refresh Spring Application Context of module fundproduct-core-service of application fundproduct.
+2019-12-05 20:10:50,066 INFO  sofa-module-start-fundproduct-core-service - Registering component: reference:com.sdu.fund.common.dal.dao.FundCompanyDao:#414599042
+2019-12-05 20:10:50,066 INFO  sofa-module-start-fundproduct-core-service -  >>In Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:10:50,070 INFO  sofa-module-start-fundproduct-core-service -  >>In Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:10:50,086 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 20:10:50,086 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:10:50,087 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:10:50,087 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:10:50,087 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:10:50,087 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 20:10:50,091 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct End +++++++++++++++++
+2019-12-05 20:10:50,091 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:10:50,094 INFO  main                             - 
+Spring context initialize success module list(4) >>>>>>> [totalTime = 934 ms, realTime = 825 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [66 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/shared/target/classes/META-INF/spring/biz-shared-service.xml
+  ├─ fundproduct-common-dal [748 ms]
+  │    `---/usr/local/mavenProject/fund/app/common/dal/target/classes/META-INF/spring/common-dal.xml
+  ├─ fundproduct-biz-service-impl [46 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/service-impl/target/classes/META-INF/spring/biz-service-impl.xml
+  └─ fundproduct-core-service [74 ms]
+       `---/usr/local/mavenProject/fund/app/core/service/target/classes/META-INF/spring/core-service.xml
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(4) >>>>>>> [totalTime = 934 ms, realTime = 825 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [66 ms]
+  ├─ fundproduct-common-dal [748 ms]
+  │    +---org.mybatis.spring.mapper.MapperScannerConfigurer	[557 ms]
+  │    `---org.mybatis.spring.SqlSessionFactoryBean (sqlSessionFactory)	[543 ms]
+  ├─ fundproduct-biz-service-impl [46 ms]
+  └─ fundproduct-core-service [74 ms]
+
+2019-12-05 20:10:50,094 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct End +++++++++++++++++
+2019-12-05 20:16:56,676 INFO  main                             - SOFABoot Runtime Starting!
+2019-12-05 20:17:11,789 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:#414599042
+2019-12-05 20:17:11,790 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:17:11,796 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:17:13,251 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:17:13,271 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
+2019-12-05 20:17:13,271 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:17:13,273 INFO  main                             - 
+All activated module list(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+Modules that could install(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+2019-12-05 20:17:13,279 INFO  main                             - Start install fundproducts module: com.sdu.fund.sample.standard.biz.shared
+2019-12-05 20:17:13,490 INFO  main                             - Start install fundproducts module: fundproduct-common-dal
+2019-12-05 20:17:13,695 INFO  main                             - Start install fundproducts module: fundproduct-biz-service-impl
+2019-12-05 20:17:13,722 INFO  main                             - Start install fundproducts module: fundproduct-core-service
+2019-12-05 20:17:13,771 INFO  sofa-module-start-fundproduct-common-dal - Begin refresh Spring Application Context of module fundproduct-common-dal of application fundproduct.
+2019-12-05 20:17:13,771 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared - Begin refresh Spring Application Context of module com.sdu.fund.sample.standard.biz.shared of application fundproduct.
+2019-12-05 20:17:14,430 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundCompanyDao
+2019-12-05 20:17:14,430 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:17:14,430 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:17:14,430 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:17:14,430 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:17:14,430 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundCompanyDao
+2019-12-05 20:17:14,443 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 20:17:14,443 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:17:14,443 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:17:14,443 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:17:14,443 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:17:14,443 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 20:17:14,452 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 20:17:14,452 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:17:14,452 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:17:14,452 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:17:14,452 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:17:14,452 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 20:17:14,463 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 20:17:14,463 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:17:14,463 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:17:14,463 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:17:14,463 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:17:14,463 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 20:17:14,468 INFO  sofa-module-start-fundproduct-biz-service-impl - Begin refresh Spring Application Context of module fundproduct-biz-service-impl of application fundproduct.
+2019-12-05 20:17:14,469 INFO  sofa-module-start-fundproduct-core-service - Begin refresh Spring Application Context of module fundproduct-core-service of application fundproduct.
+2019-12-05 20:17:14,657 INFO  sofa-module-start-fundproduct-core-service - Registering component: reference:com.sdu.fund.common.dal.dao.FundCompanyDao:#414599042
+2019-12-05 20:17:14,657 INFO  sofa-module-start-fundproduct-core-service -  >>In Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:17:14,662 INFO  sofa-module-start-fundproduct-core-service -  >>In Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:17:14,685 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 20:17:14,685 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:17:14,685 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:17:14,686 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:17:14,686 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:17:14,686 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 20:17:14,690 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct End +++++++++++++++++
+2019-12-05 20:17:14,690 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:17:14,692 INFO  main                             - 
+Spring context initialize success module list(4) >>>>>>> [totalTime = 1021 ms, realTime = 916 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [66 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/shared/target/classes/META-INF/spring/biz-shared-service.xml
+  ├─ fundproduct-common-dal [693 ms]
+  │    `---/usr/local/mavenProject/fund/app/common/dal/target/classes/META-INF/spring/common-dal.xml
+  ├─ fundproduct-biz-service-impl [42 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/service-impl/target/classes/META-INF/spring/biz-service-impl.xml
+  └─ fundproduct-core-service [220 ms]
+       `---/usr/local/mavenProject/fund/app/core/service/target/classes/META-INF/spring/core-service.xml
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(4) >>>>>>> [totalTime = 1021 ms, realTime = 916 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [66 ms]
+  ├─ fundproduct-common-dal [693 ms]
+  │    +---org.mybatis.spring.mapper.MapperScannerConfigurer	[508 ms]
+  │    `---org.mybatis.spring.SqlSessionFactoryBean (sqlSessionFactory)	[493 ms]
+  ├─ fundproduct-biz-service-impl [42 ms]
+  └─ fundproduct-core-service [220 ms]
+
+2019-12-05 20:17:14,693 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct End +++++++++++++++++
+2019-12-05 20:23:03,240 INFO  main                             - SOFABoot Runtime Starting!
+2019-12-05 20:23:17,000 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:#414599042
+2019-12-05 20:23:17,000 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:23:17,006 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:23:17,958 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:23:17,969 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
+2019-12-05 20:23:17,969 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:23:17,971 INFO  main                             - 
+All activated module list(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+Modules that could install(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+2019-12-05 20:23:17,976 INFO  main                             - Start install fundproducts module: com.sdu.fund.sample.standard.biz.shared
+2019-12-05 20:23:18,116 INFO  main                             - Start install fundproducts module: fundproduct-common-dal
+2019-12-05 20:23:18,282 INFO  main                             - Start install fundproducts module: fundproduct-biz-service-impl
+2019-12-05 20:23:18,306 INFO  main                             - Start install fundproducts module: fundproduct-core-service
+2019-12-05 20:23:18,354 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared - Begin refresh Spring Application Context of module com.sdu.fund.sample.standard.biz.shared of application fundproduct.
+2019-12-05 20:23:18,354 INFO  sofa-module-start-fundproduct-common-dal - Begin refresh Spring Application Context of module fundproduct-common-dal of application fundproduct.
+2019-12-05 20:23:19,040 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundCompanyDao
+2019-12-05 20:23:19,041 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:23:19,041 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:23:19,041 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:23:19,041 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:23:19,041 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundCompanyDao
+2019-12-05 20:23:19,054 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 20:23:19,054 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:23:19,054 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:23:19,054 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:23:19,054 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:23:19,054 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 20:23:19,064 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 20:23:19,064 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:23:19,064 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:23:19,064 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:23:19,064 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:23:19,064 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 20:23:19,074 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 20:23:19,074 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:23:19,074 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:23:19,074 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:23:19,074 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:23:19,074 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 20:23:19,080 INFO  sofa-module-start-fundproduct-biz-service-impl - Begin refresh Spring Application Context of module fundproduct-biz-service-impl of application fundproduct.
+2019-12-05 20:23:19,080 INFO  sofa-module-start-fundproduct-core-service - Begin refresh Spring Application Context of module fundproduct-core-service of application fundproduct.
+2019-12-05 20:23:19,121 INFO  sofa-module-start-fundproduct-core-service - Registering component: reference:com.sdu.fund.common.dal.dao.FundCompanyDao:#414599042
+2019-12-05 20:23:19,121 INFO  sofa-module-start-fundproduct-core-service -  >>In Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:23:19,124 INFO  sofa-module-start-fundproduct-core-service -  >>In Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundCompanyDao.
+2019-12-05 20:23:19,139 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 20:23:19,139 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:23:19,139 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:23:19,139 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:23:19,140 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:23:19,140 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 20:23:19,142 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct End +++++++++++++++++
+2019-12-05 20:23:19,142 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:23:19,144 INFO  main                             - 
+Spring context initialize success module list(4) >>>>>>> [totalTime = 938 ms, realTime = 786 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [125 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/shared/target/classes/META-INF/spring/biz-shared-service.xml
+  ├─ fundproduct-common-dal [723 ms]
+  │    `---/usr/local/mavenProject/fund/app/common/dal/target/classes/META-INF/spring/common-dal.xml
+  ├─ fundproduct-biz-service-impl [30 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/service-impl/target/classes/META-INF/spring/biz-service-impl.xml
+  └─ fundproduct-core-service [60 ms]
+       `---/usr/local/mavenProject/fund/app/core/service/target/classes/META-INF/spring/core-service.xml
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(4) >>>>>>> [totalTime = 938 ms, realTime = 786 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [125 ms]
+  ├─ fundproduct-common-dal [723 ms]
+  │    +---org.mybatis.spring.mapper.MapperScannerConfigurer	[498 ms]
+  │    `---org.mybatis.spring.SqlSessionFactoryBean (sqlSessionFactory)	[474 ms]
+  ├─ fundproduct-biz-service-impl [30 ms]
+  └─ fundproduct-core-service [60 ms]
+
+2019-12-05 20:23:19,144 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct End +++++++++++++++++
+2019-12-05 20:42:52,221 INFO  main                             - SOFABoot Runtime Starting!
+2019-12-05 20:43:06,485 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:#414599042
+2019-12-05 20:43:06,486 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:43:06,489 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:43:07,618 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:43:07,631 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
+2019-12-05 20:43:07,631 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:43:07,633 INFO  main                             - 
+All activated module list(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+Modules that could install(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+2019-12-05 20:43:07,639 INFO  main                             - Start install fundproducts module: com.sdu.fund.sample.standard.biz.shared
+2019-12-05 20:43:07,808 INFO  main                             - Start install fundproducts module: fundproduct-common-dal
+2019-12-05 20:43:07,995 INFO  main                             - Start install fundproducts module: fundproduct-biz-service-impl
+2019-12-05 20:43:08,018 INFO  main                             - Start install fundproducts module: fundproduct-core-service
+2019-12-05 20:43:08,094 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared - Begin refresh Spring Application Context of module com.sdu.fund.sample.standard.biz.shared of application fundproduct.
+2019-12-05 20:43:08,096 INFO  sofa-module-start-fundproduct-common-dal - Begin refresh Spring Application Context of module fundproduct-common-dal of application fundproduct.
+2019-12-05 20:43:09,074 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 20:43:09,075 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:43:09,075 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:43:09,075 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:43:09,075 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:43:09,075 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 20:43:09,089 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 20:43:09,089 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:43:09,090 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:43:09,090 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:43:09,090 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:43:09,090 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 20:43:09,102 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 20:43:09,103 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:43:09,103 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:43:09,103 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:43:09,103 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:43:09,103 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 20:43:09,112 INFO  sofa-module-start-fundproduct-core-service - Begin refresh Spring Application Context of module fundproduct-core-service of application fundproduct.
+2019-12-05 20:43:09,112 INFO  sofa-module-start-fundproduct-biz-service-impl - Begin refresh Spring Application Context of module fundproduct-biz-service-impl of application fundproduct.
+2019-12-05 20:43:09,175 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 20:43:09,175 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:43:09,175 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:43:09,175 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:43:09,175 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:43:09,176 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 20:43:09,180 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct End +++++++++++++++++
+2019-12-05 20:43:09,182 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:43:09,184 INFO  main                             - 
+Spring context initialize success module list(4) >>>>>>> [totalTime = 1200 ms, realTime = 1082 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [78 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/shared/target/classes/META-INF/spring/biz-shared-service.xml
+  ├─ fundproduct-common-dal [1014 ms]
+  │    `---/usr/local/mavenProject/fund/app/common/dal/target/classes/META-INF/spring/common-dal.xml
+  ├─ fundproduct-biz-service-impl [42 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/service-impl/target/classes/META-INF/spring/biz-service-impl.xml
+  └─ fundproduct-core-service [66 ms]
+       `---/usr/local/mavenProject/fund/app/core/service/target/classes/META-INF/spring/core-service.xml
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(4) >>>>>>> [totalTime = 1200 ms, realTime = 1082 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [78 ms]
+  ├─ fundproduct-common-dal [1014 ms]
+  │    +---org.mybatis.spring.mapper.MapperScannerConfigurer	[806 ms]
+  │    `---org.mybatis.spring.SqlSessionFactoryBean (sqlSessionFactory)	[793 ms]
+  ├─ fundproduct-biz-service-impl [42 ms]
+  └─ fundproduct-core-service [66 ms]
+
+2019-12-05 20:43:09,184 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct End +++++++++++++++++
+2019-12-05 20:54:12,909 INFO  main                             - SOFABoot Runtime Starting!
+2019-12-05 20:54:26,305 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:#414599042
+2019-12-05 20:54:26,306 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:54:26,310 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:54:27,394 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:54:27,415 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
+2019-12-05 20:54:27,415 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:54:27,416 INFO  main                             - 
+All activated module list(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+Modules that could install(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+2019-12-05 20:54:27,421 INFO  main                             - Start install fundproducts module: com.sdu.fund.sample.standard.biz.shared
+2019-12-05 20:54:27,571 INFO  main                             - Start install fundproducts module: fundproduct-common-dal
+2019-12-05 20:54:27,726 INFO  main                             - Start install fundproducts module: fundproduct-biz-service-impl
+2019-12-05 20:54:27,779 INFO  main                             - Start install fundproducts module: fundproduct-core-service
+2019-12-05 20:54:27,833 INFO  sofa-module-start-fundproduct-common-dal - Begin refresh Spring Application Context of module fundproduct-common-dal of application fundproduct.
+2019-12-05 20:54:27,834 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared - Begin refresh Spring Application Context of module com.sdu.fund.sample.standard.biz.shared of application fundproduct.
+2019-12-05 20:54:28,510 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 20:54:28,511 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:54:28,511 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:54:28,511 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:54:28,511 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:54:28,511 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 20:54:28,520 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 20:54:28,520 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:54:28,520 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:54:28,520 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:54:28,520 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:54:28,520 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 20:54:28,536 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 20:54:28,537 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:54:28,537 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:54:28,537 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:54:28,537 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:54:28,537 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 20:54:28,545 INFO  sofa-module-start-fundproduct-biz-service-impl - Begin refresh Spring Application Context of module fundproduct-biz-service-impl of application fundproduct.
+2019-12-05 20:54:28,545 INFO  sofa-module-start-fundproduct-core-service - Begin refresh Spring Application Context of module fundproduct-core-service of application fundproduct.
+2019-12-05 20:54:28,608 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 20:54:28,608 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:54:28,608 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:54:28,608 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:54:28,608 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:54:28,608 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 20:54:28,611 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct End +++++++++++++++++
+2019-12-05 20:54:28,612 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:54:28,614 INFO  main                             - 
+Spring context initialize success module list(4) >>>>>>> [totalTime = 866 ms, realTime = 776 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [57 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/shared/target/classes/META-INF/spring/biz-shared-service.xml
+  ├─ fundproduct-common-dal [707 ms]
+  │    `---/usr/local/mavenProject/fund/app/common/dal/target/classes/META-INF/spring/common-dal.xml
+  ├─ fundproduct-biz-service-impl [36 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/service-impl/target/classes/META-INF/spring/biz-service-impl.xml
+  └─ fundproduct-core-service [66 ms]
+       `---/usr/local/mavenProject/fund/app/core/service/target/classes/META-INF/spring/core-service.xml
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(4) >>>>>>> [totalTime = 866 ms, realTime = 776 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [57 ms]
+  ├─ fundproduct-common-dal [707 ms]
+  │    +---org.mybatis.spring.mapper.MapperScannerConfigurer	[526 ms]
+  │    `---org.mybatis.spring.SqlSessionFactoryBean (sqlSessionFactory)	[509 ms]
+  ├─ fundproduct-biz-service-impl [36 ms]
+  └─ fundproduct-core-service [66 ms]
+
+2019-12-05 20:54:28,614 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct End +++++++++++++++++
+2019-12-05 20:58:05,982 INFO  main                             - SOFABoot Runtime Starting!
+2019-12-05 20:58:19,217 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:#414599042
+2019-12-05 20:58:19,218 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:58:19,221 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:58:20,242 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:58:20,253 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
+2019-12-05 20:58:20,253 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:58:20,255 INFO  main                             - 
+All activated module list(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+Modules that could install(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+2019-12-05 20:58:20,261 INFO  main                             - Start install fundproducts module: com.sdu.fund.sample.standard.biz.shared
+2019-12-05 20:58:20,408 INFO  main                             - Start install fundproducts module: fundproduct-common-dal
+2019-12-05 20:58:20,569 INFO  main                             - Start install fundproducts module: fundproduct-biz-service-impl
+2019-12-05 20:58:20,587 INFO  main                             - Start install fundproducts module: fundproduct-core-service
+2019-12-05 20:58:20,627 INFO  sofa-module-start-fundproduct-common-dal - Begin refresh Spring Application Context of module fundproduct-common-dal of application fundproduct.
+2019-12-05 20:58:20,627 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared - Begin refresh Spring Application Context of module com.sdu.fund.sample.standard.biz.shared of application fundproduct.
+2019-12-05 20:58:21,158 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 20:58:21,159 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:58:21,159 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:58:21,159 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:58:21,159 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 20:58:21,159 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 20:58:21,169 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 20:58:21,169 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:58:21,169 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:58:21,169 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:58:21,169 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 20:58:21,169 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 20:58:21,181 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 20:58:21,181 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:58:21,181 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:58:21,181 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:58:21,181 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 20:58:21,181 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 20:58:21,186 INFO  sofa-module-start-fundproduct-biz-service-impl - Begin refresh Spring Application Context of module fundproduct-biz-service-impl of application fundproduct.
+2019-12-05 20:58:21,187 INFO  sofa-module-start-fundproduct-core-service - Begin refresh Spring Application Context of module fundproduct-core-service of application fundproduct.
+2019-12-05 20:58:21,232 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 20:58:21,232 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:58:21,232 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:58:21,232 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:58:21,232 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 20:58:21,232 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 20:58:21,234 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct End +++++++++++++++++
+2019-12-05 20:58:21,235 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct Start +++++++++++++++++
+2019-12-05 20:58:21,237 INFO  main                             - 
+Spring context initialize success module list(4) >>>>>>> [totalTime = 688 ms, realTime = 606 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [57 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/shared/target/classes/META-INF/spring/biz-shared-service.xml
+  ├─ fundproduct-common-dal [556 ms]
+  │    `---/usr/local/mavenProject/fund/app/common/dal/target/classes/META-INF/spring/common-dal.xml
+  ├─ fundproduct-biz-service-impl [28 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/service-impl/target/classes/META-INF/spring/biz-service-impl.xml
+  └─ fundproduct-core-service [47 ms]
+       `---/usr/local/mavenProject/fund/app/core/service/target/classes/META-INF/spring/core-service.xml
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(4) >>>>>>> [totalTime = 688 ms, realTime = 606 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [57 ms]
+  ├─ fundproduct-common-dal [556 ms]
+  │    +---org.mybatis.spring.mapper.MapperScannerConfigurer	[409 ms]
+  │    `---org.mybatis.spring.SqlSessionFactoryBean (sqlSessionFactory)	[396 ms]
+  ├─ fundproduct-biz-service-impl [28 ms]
+  └─ fundproduct-core-service [47 ms]
+
+2019-12-05 20:58:21,237 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct End +++++++++++++++++
+2019-12-05 21:14:53,586 INFO  main                             - SOFABoot Runtime Starting!
+2019-12-05 21:15:08,478 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:#414599042
+2019-12-05 21:15:08,479 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 21:15:08,484 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 21:15:09,777 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
+2019-12-05 21:15:09,791 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
+2019-12-05 21:15:09,791 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++
+2019-12-05 21:15:09,794 INFO  main                             - 
+All activated module list(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+Modules that could install(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+2019-12-05 21:15:09,799 INFO  main                             - Start install fundproducts module: com.sdu.fund.sample.standard.biz.shared
+2019-12-05 21:15:10,186 INFO  main                             - Start install fundproducts module: fundproduct-common-dal
+2019-12-05 21:15:10,463 INFO  main                             - Start install fundproducts module: fundproduct-biz-service-impl
+2019-12-05 21:15:10,488 INFO  main                             - Start install fundproducts module: fundproduct-core-service
+2019-12-05 21:15:10,550 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared - Begin refresh Spring Application Context of module com.sdu.fund.sample.standard.biz.shared of application fundproduct.
+2019-12-05 21:15:10,549 INFO  sofa-module-start-fundproduct-common-dal - Begin refresh Spring Application Context of module fundproduct-common-dal of application fundproduct.
+2019-12-05 21:15:11,365 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 21:15:11,365 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 21:15:11,365 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 21:15:11,365 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 21:15:11,365 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 21:15:11,366 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 21:15:11,381 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 21:15:11,381 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 21:15:11,381 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 21:15:11,382 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 21:15:11,382 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 21:15:11,382 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 21:15:11,399 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 21:15:11,400 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 21:15:11,400 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 21:15:11,400 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 21:15:11,400 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 21:15:11,400 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 21:15:11,409 INFO  sofa-module-start-fundproduct-biz-service-impl - Begin refresh Spring Application Context of module fundproduct-biz-service-impl of application fundproduct.
+2019-12-05 21:15:11,409 INFO  sofa-module-start-fundproduct-core-service - Begin refresh Spring Application Context of module fundproduct-core-service of application fundproduct.
+2019-12-05 21:15:11,553 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 21:15:11,553 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 21:15:11,553 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 21:15:11,553 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 21:15:11,553 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 21:15:11,554 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 21:15:11,566 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct End +++++++++++++++++
+2019-12-05 21:15:11,566 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct Start +++++++++++++++++
+2019-12-05 21:15:11,568 INFO  main                             - 
+Spring context initialize success module list(4) >>>>>>> [totalTime = 1146 ms, realTime = 1008 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [68 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/shared/target/classes/META-INF/spring/biz-shared-service.xml
+  ├─ fundproduct-common-dal [854 ms]
+  │    `---/usr/local/mavenProject/fund/app/common/dal/target/classes/META-INF/spring/common-dal.xml
+  ├─ fundproduct-biz-service-impl [74 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/service-impl/target/classes/META-INF/spring/biz-service-impl.xml
+  └─ fundproduct-core-service [150 ms]
+       `---/usr/local/mavenProject/fund/app/core/service/target/classes/META-INF/spring/core-service.xml
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(4) >>>>>>> [totalTime = 1146 ms, realTime = 1008 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [68 ms]
+  ├─ fundproduct-common-dal [854 ms]
+  │    +---org.mybatis.spring.mapper.MapperScannerConfigurer	[644 ms]
+  │    `---org.mybatis.spring.SqlSessionFactoryBean (sqlSessionFactory)	[625 ms]
+  ├─ fundproduct-biz-service-impl [74 ms]
+  └─ fundproduct-core-service [150 ms]
+
+2019-12-05 21:15:11,568 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct End +++++++++++++++++
+2019-12-05 21:26:46,876 INFO  main                             - SOFABoot Runtime Starting!
+2019-12-05 21:27:00,650 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:#414599042
+2019-12-05 21:27:00,651 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 21:27:00,654 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 21:27:02,024 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
+2019-12-05 21:27:02,062 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
+2019-12-05 21:27:02,062 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++
+2019-12-05 21:27:02,065 INFO  main                             - 
+All activated module list(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+Modules that could install(5) >>>>>>>
+  ├─ com.sdu.fund.sample.standard.biz.shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+2019-12-05 21:27:02,105 INFO  main                             - Start install fundproducts module: com.sdu.fund.sample.standard.biz.shared
+2019-12-05 21:27:02,331 INFO  main                             - Start install fundproducts module: fundproduct-common-dal
+2019-12-05 21:27:02,468 INFO  main                             - Start install fundproducts module: fundproduct-biz-service-impl
+2019-12-05 21:27:02,485 INFO  main                             - Start install fundproducts module: fundproduct-core-service
+2019-12-05 21:27:02,528 INFO  sofa-module-start-fundproduct-common-dal - Begin refresh Spring Application Context of module fundproduct-common-dal of application fundproduct.
+2019-12-05 21:27:02,528 INFO  sofa-module-start-com.sdu.fund.sample.standard.biz.shared - Begin refresh Spring Application Context of module com.sdu.fund.sample.standard.biz.shared of application fundproduct.
+2019-12-05 21:27:03,211 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 21:27:03,212 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 21:27:03,212 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 21:27:03,212 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 21:27:03,212 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundArchiveDao.
+2019-12-05 21:27:03,212 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundArchiveDao
+2019-12-05 21:27:03,222 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 21:27:03,223 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 21:27:03,223 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 21:27:03,223 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 21:27:03,223 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundDataDao.
+2019-12-05 21:27:03,223 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundDataDao
+2019-12-05 21:27:03,236 INFO  sofa-module-start-fundproduct-common-dal - Registering component: service:com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 21:27:03,236 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 21:27:03,236 INFO  sofa-module-start-fundproduct-common-dal -  <<PreOut Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 21:27:03,236 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Begins - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 21:27:03,236 INFO  sofa-module-start-fundproduct-common-dal -  <<Out Binding [jvm] Ends - com.sdu.fund.common.dal.dao.FundManagerDao.
+2019-12-05 21:27:03,236 INFO  sofa-module-start-fundproduct-common-dal - Register Service - com.sdu.fund.common.dal.dao.FundManagerDao
+2019-12-05 21:27:03,242 INFO  sofa-module-start-fundproduct-biz-service-impl - Begin refresh Spring Application Context of module fundproduct-biz-service-impl of application fundproduct.
+2019-12-05 21:27:03,243 INFO  sofa-module-start-fundproduct-core-service - Begin refresh Spring Application Context of module fundproduct-core-service of application fundproduct.
+2019-12-05 21:27:03,301 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 21:27:03,302 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 21:27:03,302 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 21:27:03,302 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 21:27:03,302 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService.
+2019-12-05 21:27:03,302 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService
+2019-12-05 21:27:03,304 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct End +++++++++++++++++
+2019-12-05 21:27:03,305 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct Start +++++++++++++++++
+2019-12-05 21:27:03,307 INFO  main                             - 
+Spring context initialize success module list(4) >>>>>>> [totalTime = 879 ms, realTime = 774 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [73 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/shared/target/classes/META-INF/spring/biz-shared-service.xml
+  ├─ fundproduct-common-dal [711 ms]
+  │    `---/usr/local/mavenProject/fund/app/common/dal/target/classes/META-INF/spring/common-dal.xml
+  ├─ fundproduct-biz-service-impl [34 ms]
+  │    `---/usr/local/mavenProject/fund/app/biz/service-impl/target/classes/META-INF/spring/biz-service-impl.xml
+  └─ fundproduct-core-service [61 ms]
+       `---/usr/local/mavenProject/fund/app/core/service/target/classes/META-INF/spring/core-service.xml
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(4) >>>>>>> [totalTime = 879 ms, realTime = 774 ms]
+  ├─ com.sdu.fund.sample.standard.biz.shared [73 ms]
+  ├─ fundproduct-common-dal [711 ms]
+  │    +---org.mybatis.spring.mapper.MapperScannerConfigurer	[534 ms]
+  │    `---org.mybatis.spring.SqlSessionFactoryBean (sqlSessionFactory)	[515 ms]
+  ├─ fundproduct-biz-service-impl [34 ms]
+  └─ fundproduct-core-service [61 ms]
+
+2019-12-05 21:27:03,307 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct End +++++++++++++++++

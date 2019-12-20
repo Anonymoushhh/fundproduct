@@ -52,25 +52,4 @@
         <property name="basePackage" value="com.sdu.fund.common.dal.mapper" />
     </bean>
 
-    <bean id="fundCompanyDao" class="com.sdu.fund.common.dal.daoimpl.FundCompanyDaoImpl"/>
-    <sofa:service ref="fundCompanyDao" interface="com.sdu.fund.common.dal.dao.FundCompanyDao">
-        <sofa:binding.jvm/>
-    </sofa:service>
-
-    <bean id="fundArchiveDao" class="com.sdu.fund.common.dal.daoimpl.FundArchiveDaoImpl"/>
-    <sofa:service ref="fundArchiveDao" interface="com.sdu.fund.common.dal.dao.FundArchiveDao">
-        <sofa:binding.jvm/>
-    </sofa:service>
-
-    <bean id="fundDataDao" class="com.sdu.fund.common.dal.daoimpl.FundDataDaoImpl"/>
-    <sofa:service ref="fundDataDao" interface="com.sdu.fund.common.dal.dao.FundDataDao">
-        <sofa:binding.jvm/>
-    </sofa:service>
-
-    <bean id="fundManagerDao" class="com.sdu.fund.common.dal.daoimpl.FundManagerDaoImpl"/>
-    <sofa:service ref="fundManagerDao" interface="com.sdu.fund.common.dal.dao.FundManagerDao">
-        <sofa:binding.jvm/>
-    </sofa:service>
-
-
 </beans>

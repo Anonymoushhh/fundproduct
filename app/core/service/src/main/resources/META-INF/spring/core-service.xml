@@ -8,12 +8,16 @@
        default-autowire="byName">
 
     <bean id="fundCompanyRepository" class="com.sdu.fund.core.repository.FundCompanyRepository"/>
-<!--    <sofa:service ref="fundCompanyRepository" interface="com.sdu.fund.core.repository.Repository">-->
-<!--        <sofa:binding.jvm/>-->
-<!--    </sofa:service>-->
+    <bean id="fundArchiveRepository" class="com.sdu.fund.core.repository.FundArchiveRepository"/>
 
-    <bean class="com.sdu.fund.core.serviceImpl.FundCompanyDataCrawlingServiceImpl" id="fundCompanyDataCrawlingService"/>
+
+    <bean class="com.sdu.fund.core.serviceImpl.FundCompanyCrawlingService" id="fundCompanyDataCrawlingService"/>
     <sofa:service ref="fundCompanyDataCrawlingService" interface="com.sdu.fund.core.service.DataCrawlingService">
+        <sofa:binding.jvm/>
+    </sofa:service>
+
+    <bean class="com.sdu.fund.core.serviceImpl.FundArchiveCrawlingService" id="fundArchiveCrawlingService"/>
+    <sofa:service ref="fundArchiveCrawlingService" interface="com.sdu.fund.core.service.FundCrawlingService">
         <sofa:binding.jvm/>
     </sofa:service>
 

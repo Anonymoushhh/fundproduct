@@ -20,6 +20,8 @@ import com.alipay.sofa.runtime.api.annotation.SofaReference;
 import com.sdu.fund.common.result.Result;
 import com.sdu.fund.core.request.CrawingRequest;
 import com.sdu.fund.core.service.DataCrawlingService;
+import com.sdu.fund.core.service.FundCrawlingService;
+import com.sdu.fund.core.serviceImpl.FundArchiveCrawlingService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -31,17 +33,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class SampleRestController {
 
     @SofaReference
-    private DataCrawlingService fundCompanyDataCrawlingService;
+    private FundCrawlingService fundArchiveCrawlingService;
 
     @RequestMapping("/test")
     public Result test() {
-        CrawingRequest crawingRequest = new CrawingRequest();
-        crawingRequest.setUrl("http://fund.eastmoney.com/Data/FundRankScale.aspx?_=1574132995835");
-        return fundCompanyDataCrawlingService.save(fundCompanyDataCrawlingService.deal(fundCompanyDataCrawlingService.crawing(crawingRequest)));
+        return fundArchiveCrawlingService.execute();
     }
 
-
-//    public void setFundCompanyDataCrawlingService(FundCompanyDataCrawlingServiceImpl fundCompanyDataCrawlingService) {
-//        this.fundCompanyDataCrawlingService = fundCompanyDataCrawlingService;
-//    }
 }

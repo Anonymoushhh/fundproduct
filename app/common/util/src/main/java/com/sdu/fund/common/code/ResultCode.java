@@ -8,7 +8,7 @@ package com.sdu.fund.common.code;
  **/
 public class ResultCode {
 
-    /* 成功*/
+    /* 全部成功*/
     public static final int  SUCCESS = 0;
 
     /* 服务端异常*/
@@ -26,4 +26,9 @@ public class ResultCode {
     /* 部分失败*/
     public static final int  PARTIAL_FAILURE = 5;
 
+    /* 数据url失效*/
+    public static final int URL_INVAILD = 6;
+
+    /* 全部失败*/
+    public static final int  FAILURE = 7;
 }

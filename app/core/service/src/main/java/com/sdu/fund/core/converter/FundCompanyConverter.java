@@ -2,6 +2,7 @@ package com.sdu.fund.core.converter;
 
 import com.sdu.fund.core.model.bo.FundCompany;
 import com.sdu.fund.common.dal.entity.FundCompanyDo;
+import org.springframework.beans.BeanUtils;
 
 /**
  * @program: fundproduct
@@ -16,16 +17,7 @@ public class FundCompanyConverter{
             return null;
         }
         FundCompany fundCompany = new FundCompany();
-        fundCompany.setFundCompanyCode(fundCompanyDo.getFundCompanyCode());
-        fundCompany.setFundCompanyName(fundCompanyDo.getFundCompanyName());
-        fundCompany.setEstablishDate(fundCompanyDo.getEstablishDate());
-        fundCompany.setFundAmount(fundCompanyDo.getFundAmount());
-        fundCompany.setManager(fundCompanyDo.getManager());
-        fundCompany.setFundCompanyNameAcronym(fundCompanyDo.getFundCompanyNameAcronym());
-        fundCompany.setManagementScale(fundCompanyDo.getManagementScale());
-        fundCompany.setGrade(fundCompanyDo.getGrade());
-        fundCompany.setFundCompanyNameAbbr(fundCompanyDo.getFundCompanyNameAbbr());
-        fundCompany.setUpdateTime(fundCompanyDo.getUpdateTime());
+        BeanUtils.copyProperties(fundCompanyDo,fundCompany);
 
         return fundCompany;
     }
@@ -35,16 +27,7 @@ public class FundCompanyConverter{
             return null;
         }
         FundCompanyDo fundCompanyDo = new FundCompanyDo();
-        fundCompanyDo.setFundCompanyCode(fundCompany.getFundCompanyCode());
-        fundCompanyDo.setFundCompanyName(fundCompany.getFundCompanyName());
-        fundCompanyDo.setEstablishDate(fundCompany.getEstablishDate());
-        fundCompanyDo.setFundAmount(fundCompany.getFundAmount());
-        fundCompanyDo.setManager(fundCompany.getManager());
-        fundCompanyDo.setFundCompanyNameAcronym(fundCompany.getFundCompanyNameAcronym());
-        fundCompanyDo.setManagementScale(fundCompany.getManagementScale());
-        fundCompanyDo.setGrade(fundCompany.getGrade());
-        fundCompanyDo.setFundCompanyNameAbbr(fundCompany.getFundCompanyNameAbbr());
-        fundCompanyDo.setUpdateTime(fundCompany.getUpdateTime());
+        BeanUtils.copyProperties(fundCompany,fundCompanyDo);
 
         return fundCompanyDo;
     }

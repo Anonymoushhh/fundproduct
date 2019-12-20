@@ -1,16 +1,14 @@
 package com.sdu.fund.core.repository;
 
-import com.alipay.sofa.runtime.api.annotation.SofaReference;
 import com.sdu.fund.common.code.ResultCode;
-import com.sdu.fund.common.dal.entity.FundCompanyDo;
+import com.sdu.fund.common.dal.mapper.FundCompanyMapper;
 import com.sdu.fund.common.result.Result;
 import com.sdu.fund.common.util.ResultUtil;
+import com.sdu.fund.common.validator.Validator;
 import com.sdu.fund.core.converter.FundCompanyConverter;
 import com.sdu.fund.core.model.bo.FundCompany;
 
-import java.util.List;
 
-import com.sdu.fund.common.dal.dao.FundCompanyDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,11 +25,11 @@ public class FundCompanyRepository implements Repository<FundCompany> {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(FundCompanyRepository.class);
 
-    @SofaReference
-    private FundCompanyDao fundCompanyDao;
+    @Autowired
+    private FundCompanyMapper fundCompanyMapper;
 
     public FundCompany get(String fundCompanyCode) {
-        return FundCompanyConverter.FundCompanyDoconvert2FundCompany(fundCompanyDao.selectByPrimaryKey(fundCompanyCode));
+        return FundCompanyConverter.FundCompanyDoconvert2FundCompany(fundCompanyMapper.selectByPrimaryKey(fundCompanyCode));
     }
 
     public Result add(FundCompany fundCompany) {
@@ -44,7 +42,7 @@ public class FundCompanyRepository implements Repository<FundCompany> {
         }
 
         try {
-            int id = fundCompanyDao.insert(FundCompanyConverter.FundCompanyconvert2FundCompanyDo(fundCompany));
+            int id = fundCompanyMapper.insert(FundCompanyConverter.FundCompanyconvert2FundCompanyDo(fundCompany));
             if (id > 0) {
                 return ResultUtil.buildSuccessResult();
             } else {
@@ -67,14 +65,14 @@ public class FundCompanyRepository implements Repository<FundCompany> {
         // 预校验
         boolean check = preCheck(fundCompany);
         if (!check) {
-            LOGGER.error("基金公司信息插入失败，fundCompanyCode={},errCode={}", fundCompany.getFundCompanyCode(),
+            LOGGER.error("基金公司信息更新失败，fundCompanyCode={},errCode={}", fundCompany.getFundCompanyCode(),
                 ResultCode.PARAMETER_ILLEGAL);
             return ResultUtil.buildFailedResult(ResultCode.PARAMETER_ILLEGAL);
         }
 
         try {
             int count =
-                fundCompanyDao.updateByPrimaryKey(FundCompanyConverter.FundCompanyconvert2FundCompanyDo(fundCompany));
+                fundCompanyMapper.updateByPrimaryKeySelective(FundCompanyConverter.FundCompanyconvert2FundCompanyDo(fundCompany));
             if (count > 0) {
                 return ResultUtil.buildSuccessResult();
             } else {
@@ -95,7 +93,7 @@ public class FundCompanyRepository implements Repository<FundCompany> {
 
     public Result delete(String fundCompanyCode) {
         try {
-            int count = fundCompanyDao.deleteByPrimaryKey(fundCompanyCode);
+            int count = fundCompanyMapper.deleteByPrimaryKey(fundCompanyCode);
             if (count > 0) {
                 return ResultUtil.buildSuccessResult();
             } else {
@@ -114,7 +112,6 @@ public class FundCompanyRepository implements Repository<FundCompany> {
         }
     }
 
-
     /*
      * @description 预校验
      * @param [fundCompany]
@@ -123,10 +120,6 @@ public class FundCompanyRepository implements Repository<FundCompany> {
      * @date 2019/11/29
      */
     private boolean preCheck(FundCompany fundCompany) {
-        boolean check = false;
-        if (fundCompany != null && fundCompany.getFundCompanyCode() != null) {
-            check = true;
-        }
-        return check;
+        return Validator.notNull(fundCompany) && Validator.notNull(fundCompany.getFundCompanyCode());
     }
 }

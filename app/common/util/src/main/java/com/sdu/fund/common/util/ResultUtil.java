@@ -54,4 +54,18 @@ public class ResultUtil {
         result.setData(null);
         return result;
     }
+    /*
+     * @description 异常方法
+     * @param [errCode]
+     * @return com.sdu.fund.common.result.Result
+     * @author anonymous
+     * @date 2019/11/28
+     */
+    public static Result buildFailedResult(int errCode,Object object){
+        Result result = new Result<>();
+        result.setCode(errCode);
+        result.setSuccess(false);
+        result.setData(object);
+        return result;
+    }
 }

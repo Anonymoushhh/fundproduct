@@ -1,7 +1,9 @@
 package com.sdu.fund.core.request;
 
+import com.google.common.collect.Maps;
 import com.sdu.fund.common.enums.RequestMethodEnum;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -19,10 +21,13 @@ public class CrawingRequest {
     private RequestMethodEnum requestMethodEnum;
 
     /* 是否分页*/
-    private Boolean paging;
+    private boolean paging;
+
+    /* 组合请求*/
+    private List<CrawingRequest> crawingRequests;
 
     /* 扩展字段*/
-    private Map<String,Object> extInfo;
+    private Map<String,Object> extInfo = Maps.newHashMap();
 
     public String getUrl() {
         return url;
@@ -40,11 +45,11 @@ public class CrawingRequest {
         this.requestMethodEnum = requestMethodEnum;
     }
 
-    public Boolean getPaging() {
+    public boolean getPaging() {
         return paging;
     }
 
-    public void setPaging(Boolean paging) {
+    public void setPaging(boolean paging) {
         this.paging = paging;
     }
 
@@ -56,4 +61,19 @@ public class CrawingRequest {
         extInfo.put("curPage",curPage);
     }
 
+    public List<CrawingRequest> getCrawingRequests() {
+        return crawingRequests;
+    }
+
+    public void setCrawingRequests(List<CrawingRequest> crawingRequests) {
+        this.crawingRequests = crawingRequests;
+    }
+
+    public Map<String, Object> getExtInfo() {
+        return extInfo;
+    }
+
+    public void setExtInfo(Map<String, Object> extInfo) {
+        this.extInfo = extInfo;
+    }
 }
