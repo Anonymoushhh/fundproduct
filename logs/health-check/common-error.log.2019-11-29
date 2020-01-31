@@ -1,5 +1,0 @@
-2019-11-29 20:40:57,882 ERROR main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry; fail details:{"com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}; strict mode:true
-2019-11-29 20:40:57,884 ERROR main                             - SOFABoot HealthChecker readiness check result: failed.
-2019-11-29 20:40:57,886 ERROR main                             - HealthIndicator[sofaModuleHealthIndicator] readiness check fail; the status is: DOWN; the detail is: {"com.sdu.fund.sample.standard.biz.shared":"failed","fundproduct-biz-service-impl":"failed","fundproduct-common-dal":"failed"}.
-2019-11-29 20:40:57,887 ERROR main                             - SOFABoot HealthIndicator readiness check result: failed.
-2019-11-29 20:40:57,888 ERROR main                             - Readiness check result: fail

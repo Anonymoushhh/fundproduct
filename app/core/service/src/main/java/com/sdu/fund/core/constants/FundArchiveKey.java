@@ -1,8 +1,6 @@
 package com.sdu.fund.core.constants;
 
 
-import java.util.Date;
-
 /**
  * @program: fundproduct
  * @description: 基金档案信息解析时用到的变量名

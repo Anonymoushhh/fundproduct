@@ -30,6 +30,10 @@
             <groupId>com.alipay.sofa</groupId>
             <artifactId>runtime-sofa-boot-starter</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.sdu.fund</groupId>
+            <artifactId>fundproduct-core-service</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

@@ -1,9 +1,0 @@
-com/sdu/fund/common/dal/mapper/FundManagerMapper.class
-com/sdu/fund/common/dal/mapper/FundCompanyMapper.class
-com/sdu/fund/common/dal/entity/FundCompanyDo.class
-com/sdu/fund/common/dal/mapper/FundArchiveMapper.class
-com/sdu/fund/common/dal/entity/FundDataDo.class
-com/sdu/fund/common/dal/entity/FundManagerDo.class
-com/sdu/fund/common/dal/util/GenMain.class
-com/sdu/fund/common/dal/mapper/FundDataMapper.class
-com/sdu/fund/common/dal/entity/FundArchiveDo.class

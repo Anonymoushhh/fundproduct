@@ -190,7 +190,6 @@ public class FundManagerCrawlingService implements DataCrawlingService {
     public Result execute() {
         List<String> success = Lists.newArrayList();
         List<String> failurePages = Lists.newArrayList();
-        List<String> failureItems = Lists.newArrayList();
 
         CrawingRequest fundManagerListCrawingRequest = new CrawingRequest();
         fundManagerListCrawingRequest.setUrl(Url.fundManagerList);
@@ -205,7 +204,7 @@ public class FundManagerCrawlingService implements DataCrawlingService {
                 String fundManagerListCrawingData = crawing(fundManagerListCrawingRequest);
                 if (fundManagerListCrawingData == null) {
                     // 爬取该页失败
-                    failurePages.add(i);
+                    failurePages.add(i+"");
                 }
                 String fundManagerListData = StringUtils.substringAfter(fundManagerListCrawingData, "= ");
                 JSONObject fundManagerListJson = JSON.parseObject(fundManagerListData);
@@ -226,7 +225,6 @@ public class FundManagerCrawlingService implements DataCrawlingService {
                         FundManager fundManager = deal(sourceData);
                         // 3.保存
                         Result result = save(fundManager);
-                        return result;
                     } catch (Exception e) {
                         LOGGER.error("#基金经理数据爬取#服务异常，msg={},page={},item={}", e.getMessage(), pages,
                             JSON.toJSONString(fundManagerListDataArray.get(i)));

@@ -49,31 +49,31 @@ public class FundArchive {
     /* 基金经理ids*/
     private List<String> managerIds;
 
-    /**/
+    /* 基金托管人*/
     private String custodian;
 
-    /**/
+    /* 业绩比较基准*/
     private String performanceBaseline;
 
-    /**/
+    /* 跟踪标的*/
     private String trackingTarget;
 
-    /**/
+    /* 投资目标*/
     private String investmentTarget;
 
-    /**/
+    /* 投资理念*/
     private String investmentConcept;
 
-    /**/
+    /* 投资范围*/
     private String investmentScope;
 
-    /**/
+    /* 投资策略*/
     private String investmentStrategy;
 
-    /**/
+    /* 分红政策*/
     private String dividendPolicy;
 
-    /**/
+    /* 风险收益特征*/
     private String riskReturnCharacteristics;
 
     /* 扩展字段*/

@@ -1,0 +1,435 @@
+2020-01-27 21:50:44,142 INFO  main                             - SOFABoot Runtime Starting!
+2020-01-27 21:50:47,639 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService#414599042
+2020-01-27 21:50:47,639 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 21:50:47,643 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 21:50:47,644 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService#414599042
+2020-01-27 21:50:47,644 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 21:50:47,644 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 21:50:47,644 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService#414599042
+2020-01-27 21:50:47,644 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 21:50:47,644 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 21:50:47,644 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService#414599042
+2020-01-27 21:50:47,644 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 21:50:47,644 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 21:50:48,391 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
+2020-01-27 21:50:48,401 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
+2020-01-27 21:50:48,401 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++
+2020-01-27 21:50:48,403 INFO  main                             - 
+All activated module list(5) >>>>>>>
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-biz-shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+Modules that could install(5) >>>>>>>
+  ├─ fundproduct-biz-shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+2020-01-27 21:50:48,406 INFO  main                             - Start install fundproducts module: fundproduct-biz-shared
+2020-01-27 21:50:48,571 INFO  main                             - Start install fundproducts module: fundproduct-common-dal
+2020-01-27 21:50:48,656 INFO  main                             - Start install fundproducts module: fundproduct-biz-service-impl
+2020-01-27 21:50:48,678 INFO  main                             - Start install fundproducts module: fundproduct-core-service
+2020-01-27 21:50:48,769 INFO  sofa-module-start-fundproduct-common-dal - Begin refresh Spring Application Context of module fundproduct-common-dal of application fundproduct.
+2020-01-27 21:50:48,769 INFO  sofa-module-start-fundproduct-biz-shared - Begin refresh Spring Application Context of module fundproduct-biz-shared of application fundproduct.
+2020-01-27 21:50:49,218 INFO  sofa-module-start-fundproduct-biz-service-impl - Begin refresh Spring Application Context of module fundproduct-biz-service-impl of application fundproduct.
+2020-01-27 21:50:49,218 INFO  sofa-module-start-fundproduct-core-service - Begin refresh Spring Application Context of module fundproduct-core-service of application fundproduct.
+2020-01-27 21:50:49,297 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService
+2020-01-27 21:50:49,297 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 21:50:49,297 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 21:50:49,297 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 21:50:49,297 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 21:50:49,297 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService
+2020-01-27 21:50:49,318 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService
+2020-01-27 21:50:49,318 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 21:50:49,318 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 21:50:49,319 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 21:50:49,319 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 21:50:49,319 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService
+2020-01-27 21:50:49,332 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService
+2020-01-27 21:50:49,332 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 21:50:49,332 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 21:50:49,332 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 21:50:49,332 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 21:50:49,332 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService
+2020-01-27 21:50:49,337 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService
+2020-01-27 21:50:49,337 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 21:50:49,337 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 21:50:49,337 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 21:50:49,338 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 21:50:49,338 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService
+2020-01-27 21:50:49,339 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct End +++++++++++++++++
+2020-01-27 21:50:49,340 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct Start +++++++++++++++++
+2020-01-27 21:50:49,341 INFO  main                             - 
+Spring context initialize success module list(4) >>>>>>> [totalTime = 628 ms, realTime = 570 ms]
+  ├─ fundproduct-biz-shared [31 ms]
+  │    `---D:\MavenProject\fundproduct\app\biz\shared\target\classes\META-INF\spring\biz-shared-service.xml
+  ├─ fundproduct-common-dal [448 ms]
+  │    `---D:\MavenProject\fundproduct\app\common\dal\target\classes\META-INF\spring\common-dal.xml
+  ├─ fundproduct-biz-service-impl [28 ms]
+  │    `---D:\MavenProject\fundproduct\app\biz\service-impl\target\classes\META-INF\spring\biz-service-impl.xml
+  └─ fundproduct-core-service [121 ms]
+       `---D:\MavenProject\fundproduct\app\core\service\target\classes\META-INF\spring\core-service.xml
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(4) >>>>>>> [totalTime = 628 ms, realTime = 570 ms]
+  ├─ fundproduct-biz-shared [31 ms]
+  ├─ fundproduct-common-dal [448 ms]
+  │    +---org.mybatis.spring.mapper.MapperScannerConfigurer	[367 ms]
+  │    `---org.mybatis.spring.SqlSessionFactoryBean (sqlSessionFactory)	[341 ms]
+  ├─ fundproduct-biz-service-impl [28 ms]
+  └─ fundproduct-core-service [121 ms]
+
+2020-01-27 21:50:49,341 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct End +++++++++++++++++
+2020-01-27 21:51:02,804 INFO  main                             - SOFABoot Runtime Starting!
+2020-01-27 21:51:06,922 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService#414599042
+2020-01-27 21:51:06,923 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 21:51:06,928 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 21:51:06,929 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService#414599042
+2020-01-27 21:51:06,929 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 21:51:06,929 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 21:51:06,929 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService#414599042
+2020-01-27 21:51:06,929 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 21:51:06,930 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 21:51:06,930 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService#414599042
+2020-01-27 21:51:06,930 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 21:51:06,930 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 21:51:07,764 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
+2020-01-27 21:51:07,773 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
+2020-01-27 21:51:07,773 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++
+2020-01-27 21:51:07,775 INFO  main                             - 
+All activated module list(5) >>>>>>>
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-biz-shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+Modules that could install(5) >>>>>>>
+  ├─ fundproduct-biz-shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+2020-01-27 21:51:07,779 INFO  main                             - Start install fundproducts module: fundproduct-biz-shared
+2020-01-27 21:51:07,923 INFO  main                             - Start install fundproducts module: fundproduct-common-dal
+2020-01-27 21:51:07,998 INFO  main                             - Start install fundproducts module: fundproduct-biz-service-impl
+2020-01-27 21:51:08,021 INFO  main                             - Start install fundproducts module: fundproduct-core-service
+2020-01-27 21:51:08,121 INFO  sofa-module-start-fundproduct-common-dal - Begin refresh Spring Application Context of module fundproduct-common-dal of application fundproduct.
+2020-01-27 21:51:08,121 INFO  sofa-module-start-fundproduct-biz-shared - Begin refresh Spring Application Context of module fundproduct-biz-shared of application fundproduct.
+2020-01-27 21:51:08,652 INFO  sofa-module-start-fundproduct-biz-service-impl - Begin refresh Spring Application Context of module fundproduct-biz-service-impl of application fundproduct.
+2020-01-27 21:51:08,652 INFO  sofa-module-start-fundproduct-core-service - Begin refresh Spring Application Context of module fundproduct-core-service of application fundproduct.
+2020-01-27 21:51:08,750 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService
+2020-01-27 21:51:08,750 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 21:51:08,750 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 21:51:08,750 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 21:51:08,750 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 21:51:08,750 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService
+2020-01-27 21:51:08,774 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService
+2020-01-27 21:51:08,775 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 21:51:08,775 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 21:51:08,775 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 21:51:08,775 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 21:51:08,775 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService
+2020-01-27 21:51:08,789 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService
+2020-01-27 21:51:08,789 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 21:51:08,790 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 21:51:08,790 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 21:51:08,790 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 21:51:08,790 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService
+2020-01-27 21:51:08,809 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService
+2020-01-27 21:51:08,810 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 21:51:08,810 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 21:51:08,811 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 21:51:08,811 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 21:51:08,812 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService
+2020-01-27 21:51:08,816 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct End +++++++++++++++++
+2020-01-27 21:51:08,816 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct Start +++++++++++++++++
+2020-01-27 21:51:08,818 INFO  main                             - 
+Spring context initialize success module list(4) >>>>>>> [totalTime = 766 ms, realTime = 694 ms]
+  ├─ fundproduct-biz-shared [35 ms]
+  │    `---D:\MavenProject\fundproduct\app\biz\shared\target\classes\META-INF\spring\biz-shared-service.xml
+  ├─ fundproduct-common-dal [529 ms]
+  │    `---D:\MavenProject\fundproduct\app\common\dal\target\classes\META-INF\spring\common-dal.xml
+  ├─ fundproduct-biz-service-impl [39 ms]
+  │    `---D:\MavenProject\fundproduct\app\biz\service-impl\target\classes\META-INF\spring\biz-service-impl.xml
+  └─ fundproduct-core-service [163 ms]
+       `---D:\MavenProject\fundproduct\app\core\service\target\classes\META-INF\spring\core-service.xml
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(4) >>>>>>> [totalTime = 766 ms, realTime = 694 ms]
+  ├─ fundproduct-biz-shared [35 ms]
+  ├─ fundproduct-common-dal [529 ms]
+  │    +---org.mybatis.spring.mapper.MapperScannerConfigurer	[441 ms]
+  │    `---org.mybatis.spring.SqlSessionFactoryBean (sqlSessionFactory)	[426 ms]
+  ├─ fundproduct-biz-service-impl [39 ms]
+  └─ fundproduct-core-service [163 ms]
+
+2020-01-27 21:51:08,818 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct End +++++++++++++++++
+2020-01-27 22:00:01,090 INFO  main                             - SOFABoot Runtime Starting!
+2020-01-27 22:00:05,050 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService#414599042
+2020-01-27 22:00:05,050 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:00:05,056 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:00:05,057 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService#414599042
+2020-01-27 22:00:05,057 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:00:05,057 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:00:05,057 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService#414599042
+2020-01-27 22:00:05,057 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:00:05,057 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:00:05,058 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService#414599042
+2020-01-27 22:00:05,058 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:00:05,058 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:00:05,854 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
+2020-01-27 22:00:05,862 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
+2020-01-27 22:00:05,862 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++
+2020-01-27 22:00:05,864 INFO  main                             - 
+All activated module list(5) >>>>>>>
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-biz-shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+Modules that could install(5) >>>>>>>
+  ├─ fundproduct-biz-shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+2020-01-27 22:00:05,868 INFO  main                             - Start install fundproducts module: fundproduct-biz-shared
+2020-01-27 22:00:05,989 INFO  main                             - Start install fundproducts module: fundproduct-common-dal
+2020-01-27 22:00:06,070 INFO  main                             - Start install fundproducts module: fundproduct-biz-service-impl
+2020-01-27 22:00:06,091 INFO  main                             - Start install fundproducts module: fundproduct-core-service
+2020-01-27 22:00:06,164 INFO  sofa-module-start-fundproduct-biz-shared - Begin refresh Spring Application Context of module fundproduct-biz-shared of application fundproduct.
+2020-01-27 22:00:06,164 INFO  sofa-module-start-fundproduct-common-dal - Begin refresh Spring Application Context of module fundproduct-common-dal of application fundproduct.
+2020-01-27 22:00:06,649 INFO  sofa-module-start-fundproduct-biz-service-impl - Begin refresh Spring Application Context of module fundproduct-biz-service-impl of application fundproduct.
+2020-01-27 22:00:06,649 INFO  sofa-module-start-fundproduct-core-service - Begin refresh Spring Application Context of module fundproduct-core-service of application fundproduct.
+2020-01-27 22:00:06,775 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService
+2020-01-27 22:00:06,775 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:00:06,775 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:00:06,775 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:00:06,775 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:00:06,775 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService
+2020-01-27 22:00:06,804 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService
+2020-01-27 22:00:06,804 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:00:06,804 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:00:06,804 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:00:06,804 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:00:06,804 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService
+2020-01-27 22:00:06,817 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService
+2020-01-27 22:00:06,817 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:00:06,817 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:00:06,818 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:00:06,818 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:00:06,818 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService
+2020-01-27 22:00:06,824 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService
+2020-01-27 22:00:06,825 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:00:06,825 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:00:06,825 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:00:06,825 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:00:06,825 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService
+2020-01-27 22:00:06,828 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct End +++++++++++++++++
+2020-01-27 22:00:06,828 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct Start +++++++++++++++++
+2020-01-27 22:00:06,830 INFO  main                             - 
+Spring context initialize success module list(4) >>>>>>> [totalTime = 727 ms, realTime = 663 ms]
+  ├─ fundproduct-biz-shared [28 ms]
+  │    `---D:\MavenProject\fundproduct\app\biz\shared\target\classes\META-INF\spring\biz-shared-service.xml
+  ├─ fundproduct-common-dal [484 ms]
+  │    `---D:\MavenProject\fundproduct\app\common\dal\target\classes\META-INF\spring\common-dal.xml
+  ├─ fundproduct-biz-service-impl [37 ms]
+  │    `---D:\MavenProject\fundproduct\app\biz\service-impl\target\classes\META-INF\spring\biz-service-impl.xml
+  └─ fundproduct-core-service [178 ms]
+       `---D:\MavenProject\fundproduct\app\core\service\target\classes\META-INF\spring\core-service.xml
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(4) >>>>>>> [totalTime = 727 ms, realTime = 663 ms]
+  ├─ fundproduct-biz-shared [28 ms]
+  ├─ fundproduct-common-dal [484 ms]
+  │    +---org.mybatis.spring.mapper.MapperScannerConfigurer	[397 ms]
+  │    `---org.mybatis.spring.SqlSessionFactoryBean (sqlSessionFactory)	[384 ms]
+  ├─ fundproduct-biz-service-impl [37 ms]
+  └─ fundproduct-core-service [178 ms]
+
+2020-01-27 22:00:06,830 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct End +++++++++++++++++
+2020-01-27 22:01:10,205 INFO  main                             - SOFABoot Runtime Starting!
+2020-01-27 22:01:14,023 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService#414599042
+2020-01-27 22:01:14,023 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:01:14,028 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:01:14,029 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService#414599042
+2020-01-27 22:01:14,029 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:01:14,029 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:01:14,029 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService#414599042
+2020-01-27 22:01:14,029 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:01:14,029 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:01:14,030 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService#414599042
+2020-01-27 22:01:14,030 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:01:14,030 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:01:14,887 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
+2020-01-27 22:01:14,896 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
+2020-01-27 22:01:14,896 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++
+2020-01-27 22:01:14,898 INFO  main                             - 
+All activated module list(5) >>>>>>>
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-biz-shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+Modules that could install(5) >>>>>>>
+  ├─ fundproduct-biz-shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+2020-01-27 22:01:14,902 INFO  main                             - Start install fundproducts module: fundproduct-biz-shared
+2020-01-27 22:01:15,037 INFO  main                             - Start install fundproducts module: fundproduct-common-dal
+2020-01-27 22:01:15,108 INFO  main                             - Start install fundproducts module: fundproduct-biz-service-impl
+2020-01-27 22:01:15,124 INFO  main                             - Start install fundproducts module: fundproduct-core-service
+2020-01-27 22:01:15,210 INFO  sofa-module-start-fundproduct-biz-shared - Begin refresh Spring Application Context of module fundproduct-biz-shared of application fundproduct.
+2020-01-27 22:01:15,210 INFO  sofa-module-start-fundproduct-common-dal - Begin refresh Spring Application Context of module fundproduct-common-dal of application fundproduct.
+2020-01-27 22:01:15,662 INFO  sofa-module-start-fundproduct-biz-service-impl - Begin refresh Spring Application Context of module fundproduct-biz-service-impl of application fundproduct.
+2020-01-27 22:01:15,662 INFO  sofa-module-start-fundproduct-core-service - Begin refresh Spring Application Context of module fundproduct-core-service of application fundproduct.
+2020-01-27 22:01:15,776 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService
+2020-01-27 22:01:15,776 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:01:15,776 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:01:15,776 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:01:15,777 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:01:15,777 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService
+2020-01-27 22:01:15,794 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService
+2020-01-27 22:01:15,794 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:01:15,794 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:01:15,794 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:01:15,794 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:01:15,794 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService
+2020-01-27 22:01:15,805 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService
+2020-01-27 22:01:15,805 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:01:15,805 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:01:15,805 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:01:15,805 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:01:15,805 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService
+2020-01-27 22:01:15,812 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService
+2020-01-27 22:01:15,812 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:01:15,812 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:01:15,812 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:01:15,812 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:01:15,812 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService
+2020-01-27 22:01:15,814 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct End +++++++++++++++++
+2020-01-27 22:01:15,814 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct Start +++++++++++++++++
+2020-01-27 22:01:15,816 INFO  main                             - 
+Spring context initialize success module list(4) >>>>>>> [totalTime = 689 ms, realTime = 604 ms]
+  ├─ fundproduct-biz-shared [33 ms]
+  │    `---D:\MavenProject\fundproduct\app\biz\shared\target\classes\META-INF\spring\biz-shared-service.xml
+  ├─ fundproduct-common-dal [451 ms]
+  │    `---D:\MavenProject\fundproduct\app\common\dal\target\classes\META-INF\spring\common-dal.xml
+  ├─ fundproduct-biz-service-impl [53 ms]
+  │    `---D:\MavenProject\fundproduct\app\biz\service-impl\target\classes\META-INF\spring\biz-service-impl.xml
+  └─ fundproduct-core-service [152 ms]
+       `---D:\MavenProject\fundproduct\app\core\service\target\classes\META-INF\spring\core-service.xml
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(4) >>>>>>> [totalTime = 689 ms, realTime = 604 ms]
+  ├─ fundproduct-biz-shared [33 ms]
+  ├─ fundproduct-common-dal [451 ms]
+  │    +---org.mybatis.spring.mapper.MapperScannerConfigurer	[376 ms]
+  │    `---org.mybatis.spring.SqlSessionFactoryBean (sqlSessionFactory)	[359 ms]
+  ├─ fundproduct-biz-service-impl [53 ms]
+  └─ fundproduct-core-service [152 ms]
+
+2020-01-27 22:01:15,816 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct End +++++++++++++++++
+2020-01-27 22:06:18,653 INFO  main                             - SOFABoot Runtime Starting!
+2020-01-27 22:06:22,769 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService#414599042
+2020-01-27 22:06:22,769 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:06:22,774 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:06:22,775 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService#414599042
+2020-01-27 22:06:22,775 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:06:22,775 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:06:22,775 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService#414599042
+2020-01-27 22:06:22,775 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:06:22,776 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:06:22,776 INFO  main                             - Registering component: reference:com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService#414599042
+2020-01-27 22:06:22,776 INFO  main                             -  >>In Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:06:22,776 INFO  main                             -  >>In Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:06:23,558 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct Start +++++++++++++++++
+2020-01-27 22:06:23,567 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of fundproduct End +++++++++++++++++
+2020-01-27 22:06:23,567 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct Start +++++++++++++++++
+2020-01-27 22:06:23,569 INFO  main                             - 
+All activated module list(5) >>>>>>>
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-biz-shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+Modules that could install(5) >>>>>>>
+  ├─ fundproduct-biz-shared
+  ├─ fundproduct-common-dal
+  ├─ fundproduct-biz-service-impl
+  ├─ fundproduct-core-model
+  └─ fundproduct-core-service
+
+2020-01-27 22:06:23,574 INFO  main                             - Start install fundproducts module: fundproduct-biz-shared
+2020-01-27 22:06:23,709 INFO  main                             - Start install fundproducts module: fundproduct-common-dal
+2020-01-27 22:06:23,791 INFO  main                             - Start install fundproducts module: fundproduct-biz-service-impl
+2020-01-27 22:06:23,813 INFO  main                             - Start install fundproducts module: fundproduct-core-service
+2020-01-27 22:06:23,907 INFO  sofa-module-start-fundproduct-biz-shared - Begin refresh Spring Application Context of module fundproduct-biz-shared of application fundproduct.
+2020-01-27 22:06:23,907 INFO  sofa-module-start-fundproduct-common-dal - Begin refresh Spring Application Context of module fundproduct-common-dal of application fundproduct.
+2020-01-27 22:06:24,360 INFO  sofa-module-start-fundproduct-biz-service-impl - Begin refresh Spring Application Context of module fundproduct-biz-service-impl of application fundproduct.
+2020-01-27 22:06:24,360 INFO  sofa-module-start-fundproduct-core-service - Begin refresh Spring Application Context of module fundproduct-core-service of application fundproduct.
+2020-01-27 22:06:24,490 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService
+2020-01-27 22:06:24,490 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:06:24,490 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:06:24,490 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:06:24,490 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService.
+2020-01-27 22:06:24,490 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundCompanyCrawlingService
+2020-01-27 22:06:24,506 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService
+2020-01-27 22:06:24,506 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:06:24,506 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:06:24,506 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:06:24,506 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService.
+2020-01-27 22:06:24,506 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundDataCrawlingService
+2020-01-27 22:06:24,517 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService
+2020-01-27 22:06:24,517 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:06:24,517 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:06:24,517 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:06:24,517 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService.
+2020-01-27 22:06:24,517 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundArchiveCrawlingService
+2020-01-27 22:06:24,523 INFO  sofa-module-start-fundproduct-core-service - Registering component: service:com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService
+2020-01-27 22:06:24,524 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:06:24,524 INFO  sofa-module-start-fundproduct-core-service -  <<PreOut Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:06:24,524 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Begins - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:06:24,524 INFO  sofa-module-start-fundproduct-core-service -  <<Out Binding [jvm] Ends - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService.
+2020-01-27 22:06:24,524 INFO  sofa-module-start-fundproduct-core-service - Register Service - com.sdu.fund.core.service.DataCrawlingService:fundManagerCrawlingService
+2020-01-27 22:06:24,527 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of fundproduct End +++++++++++++++++
+2020-01-27 22:06:24,527 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct Start +++++++++++++++++
+2020-01-27 22:06:24,529 INFO  main                             - 
+Spring context initialize success module list(4) >>>>>>> [totalTime = 704 ms, realTime = 619 ms]
+  ├─ fundproduct-biz-shared [29 ms]
+  │    `---D:\MavenProject\fundproduct\app\biz\shared\target\classes\META-INF\spring\biz-shared-service.xml
+  ├─ fundproduct-common-dal [452 ms]
+  │    `---D:\MavenProject\fundproduct\app\common\dal\target\classes\META-INF\spring\common-dal.xml
+  ├─ fundproduct-biz-service-impl [57 ms]
+  │    `---D:\MavenProject\fundproduct\app\biz\service-impl\target\classes\META-INF\spring\biz-service-impl.xml
+  └─ fundproduct-core-service [166 ms]
+       `---D:\MavenProject\fundproduct\app\core\service\target\classes\META-INF\spring\core-service.xml
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(4) >>>>>>> [totalTime = 704 ms, realTime = 619 ms]
+  ├─ fundproduct-biz-shared [29 ms]
+  ├─ fundproduct-common-dal [452 ms]
+  │    +---org.mybatis.spring.mapper.MapperScannerConfigurer	[366 ms]
+  │    `---org.mybatis.spring.SqlSessionFactoryBean (sqlSessionFactory)	[355 ms]
+  ├─ fundproduct-biz-service-impl [57 ms]
+  └─ fundproduct-core-service [166 ms]
+
+2020-01-27 22:06:24,529 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of fundproduct End +++++++++++++++++

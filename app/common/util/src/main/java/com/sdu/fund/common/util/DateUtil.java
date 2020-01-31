@@ -75,22 +75,11 @@ public class DateUtil {
 
 //----------------------------------------指定时间处理
     /**
-     * 将指定时间转成yyyy-MM-dd 格式
+     * 将指定时间转成指定格式字符串
      */
-    public static String getTimeDayByString(Date date) {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+    public static String getTimeDayByString(Date date,SimpleDateFormat sdf) {
         return sdf.format(date);
     }
-
-
-    /**
-     * 将指定时间转成yyyy-MM-dd HH:mm:ss 格式
-     */
-    public static String getTimeDayByStringDou(Date date) {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        return sdf.format(date);
-    }
-
 
     /**
      * 获取传入时间的 最早时间 00:00:00
@@ -137,21 +126,32 @@ public class DateUtil {
     }
 
     /**
-     * 传入时间减1天
+     * 传入时间减x天
      * */
-    public static Date getStringBeforeDay(Date datestr){
+    public static Date getStringBeforeDays(Date datestr,int x){
         Calendar calendar = Calendar.getInstance(); //得到日历
         calendar.setTime(datestr);
-        calendar.add(Calendar.DAY_OF_MONTH, -1);
+        calendar.add(Calendar.DAY_OF_MONTH, -1*x);
 
         Date date = calendar.getTime();
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd"); //设置时间格式
         return date;
     }
 
-    /*
+    /**
+     * 传入时间减x年
+     * */
+    public static Date getStringBeforeYears(Date datestr,int x) {
+        Calendar calendar = Calendar.getInstance(); //得到日历
+        calendar.setTime(datestr);
+        calendar.add(Calendar.YEAR, -1*x);
+
+        Date date = calendar.getTime();
+        return date;
+    }
+
+    /**
      * 获取提前某分钟的时间 正数是加时间  负数是减时间
-     */
+     **/
     public static String getTimeNEWDayMinute(Integer minute) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Calendar nowTime = Calendar.getInstance();

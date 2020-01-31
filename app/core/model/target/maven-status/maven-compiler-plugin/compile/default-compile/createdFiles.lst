@@ -1,2 +1,4 @@
-com/sdu/fund/core/model/bo/FundArchive.class
-com/sdu/fund/core/model/bo/FundCompany.class
+com\sdu\fund\core\model\bo\FundArchive.class
+com\sdu\fund\core\model\bo\FundData.class
+com\sdu\fund\core\model\bo\FundManager.class
+com\sdu\fund\core\model\bo\FundCompany.class

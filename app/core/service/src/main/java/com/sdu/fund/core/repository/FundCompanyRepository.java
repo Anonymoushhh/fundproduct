@@ -28,10 +28,12 @@ public class FundCompanyRepository implements Repository<FundCompany> {
     @Autowired
     private FundCompanyMapper fundCompanyMapper;
 
+    @Override
     public FundCompany get(String fundCompanyCode) {
         return FundCompanyConverter.FundCompanyDoconvert2FundCompany(fundCompanyMapper.selectByPrimaryKey(fundCompanyCode));
     }
 
+    @Override
     public Result add(FundCompany fundCompany) {
         // 预校验
         boolean check = preCheck(fundCompany);
@@ -61,6 +63,7 @@ public class FundCompanyRepository implements Repository<FundCompany> {
         }
     }
 
+    @Override
     public Result update(FundCompany fundCompany) {
         // 预校验
         boolean check = preCheck(fundCompany);
@@ -91,6 +94,7 @@ public class FundCompanyRepository implements Repository<FundCompany> {
         }
     }
 
+    @Override
     public Result delete(String fundCompanyCode) {
         try {
             int count = fundCompanyMapper.deleteByPrimaryKey(fundCompanyCode);
