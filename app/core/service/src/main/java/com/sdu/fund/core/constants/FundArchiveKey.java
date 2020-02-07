@@ -21,4 +21,7 @@ public class FundArchiveKey {
     /* 基金经理*/
     public static final String MANAGERS = "Data_currentFundManager =";
 
+    /* 基金经理名称*/
+    public static final String MANAGERNAME = "managerName";
+
 }

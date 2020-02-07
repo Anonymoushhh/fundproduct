@@ -8,6 +8,8 @@ package com.sdu.fund.core.constants;
  **/
 public class FundDataKey {
 
+    /* 基金类型*/
+    public static final String FUND_TYPE = "fundType";
 
     /* 申购状态*/
     public static final String PURCHASE_STATUS = "purchaseStatus";

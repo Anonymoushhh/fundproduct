@@ -17,8 +17,16 @@ public class FundData {
     /* 基金名称*/
     private String fundName;
 
+    private String fundType;
+
     /* 更新日期*/
     private Date date;
+
+    /* 估算的净值*/
+    private Double estimatedNet;
+
+    /* 今日估算涨跌幅度*/
+    private Double gainRangeToday;
 
     /* 单位净值*/
     private Double unitNet;
@@ -118,6 +126,14 @@ public class FundData {
 
     public void setFundName(String fundName) {
         this.fundName = fundName;
+    }
+
+    public String getFundType() {
+        return fundType;
+    }
+
+    public void setFundType(String fundType) {
+        this.fundType = fundType;
     }
 
     public Date getDate() {
@@ -306,6 +322,22 @@ public class FundData {
 
     public Double getSupplementAmount() {
         return supplementAmount;
+    }
+
+    public Double getEstimatedNet() {
+        return estimatedNet;
+    }
+
+    public void setEstimatedNet(Double estimatedNet) {
+        this.estimatedNet = estimatedNet;
+    }
+
+    public Double getGainRangeToday() {
+        return gainRangeToday;
+    }
+
+    public void setGainRangeToday(Double gainRangeToday) {
+        this.gainRangeToday = gainRangeToday;
     }
 
     public void setSupplementAmount(Double supplementAmount) {

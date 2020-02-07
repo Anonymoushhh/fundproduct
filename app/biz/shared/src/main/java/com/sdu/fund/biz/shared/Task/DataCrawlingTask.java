@@ -1,4 +1,4 @@
-package com.sdu.fund.service.shared.Task;
+package com.sdu.fund.biz.shared.Task;
 
 import com.alipay.sofa.runtime.api.annotation.SofaReference;
 import com.sdu.fund.core.service.DataCrawlingService;

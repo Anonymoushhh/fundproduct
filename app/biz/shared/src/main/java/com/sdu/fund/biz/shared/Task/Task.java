@@ -1,4 +1,4 @@
-package com.sdu.fund.service.shared.Task;
+package com.sdu.fund.biz.shared.Task;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

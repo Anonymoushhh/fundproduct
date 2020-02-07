@@ -3,7 +3,6 @@ package com.sdu.fund.core.serviceImpl;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
@@ -13,19 +12,15 @@ import com.sdu.fund.common.exception.HttpException;
 import com.sdu.fund.common.result.Result;
 import com.sdu.fund.common.util.DateUtil;
 import com.sdu.fund.common.util.ResultUtil;
-import com.sdu.fund.common.util.StringUtil;
 import com.sdu.fund.common.util.TypeConvertUtil;
 import com.sdu.fund.common.validator.Validator;
-import com.sdu.fund.core.constants.FundArchiveKey;
 import com.sdu.fund.core.constants.FundDataKey;
 import com.sdu.fund.core.constants.Url;
 import com.sdu.fund.core.converter.RateAndDayFormatConvert;
-import com.sdu.fund.core.model.bo.FundArchive;
-import com.sdu.fund.core.model.bo.FundData;
 import com.sdu.fund.core.model.bo.FundData;
 import com.sdu.fund.core.model.bo.Rate;
-import com.sdu.fund.core.repository.FundCompanyRepository;
 import com.sdu.fund.core.repository.FundDataRepository;
+import com.sdu.fund.core.repository.FundDataRepositoryImpl;
 import com.sdu.fund.core.request.CrawingRequest;
 import com.sdu.fund.core.service.DataCrawlingService;
 import org.apache.commons.collections4.CollectionUtils;
@@ -43,7 +38,7 @@ import java.util.*;
 
 public class FundDataCrawlingService implements DataCrawlingService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(FundCompanyCrawlingService.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(FundDataCrawlingService.class);
 
     private static Map<String, String> dealMethods = Maps.newLinkedHashMap();
 
@@ -87,11 +82,13 @@ public class FundDataCrawlingService implements DataCrawlingService {
         // 3.Jsoup解析html
         Document document = Jsoup.parse(fundDataHtmlData);
         Elements elements = document.select("div[class=boxitem w790]");
-        JSONObject fundDataHtml = new JSONObject();
 
+        JSONObject fundDataHtml = new JSONObject();
+        String fundType = document.select("div[class=bs_gl]").get(0).select("span").get(1).text();
+        fundDataHtml.put(FundDataKey.FUND_TYPE, fundType);
         for (int i = 0; i < elements.size(); i++) {
             Element table = elements.get(i);
-            final List<String> keys = Lists.newArrayList("applicableAmount","applicableTime","rate");
+            final List<String> keys = Lists.newArrayList("applicableAmount", "applicableTime", "rate");
 
             if (table != null) {
                 String title = table.select("label.left").text();
@@ -136,7 +133,7 @@ public class FundDataCrawlingService implements DataCrawlingService {
                     case "交易确认日":
                         trs = table.select("tr");
                         JSONObject tradeConfirm = new JSONObject();
-                        rows= trs.get(0).select("td");
+                        rows = trs.get(0).select("td");
                         tradeConfirm.put(FundDataKey.BUY_COMFIRM_DAY, rows.get(1).text());
                         tradeConfirm.put(FundDataKey.REDEEM_COMFIRM_DAY, rows.get(3).text());
                         fundDataHtml.put(FundDataKey.TRADE_CONFIRM_DAY,
@@ -161,9 +158,9 @@ public class FundDataCrawlingService implements DataCrawlingService {
                         trs = table.select("tbody").select("tr");
                         JSONArray subscribeRate = new JSONArray();
 
-                        for (Element tr:trs) {
+                        for (Element tr : trs) {
                             rows = tr.select("td");
-                            Validator.sizeNotEquals(rows.size(),3);
+                            Validator.sizeNotEquals(rows.size(), 3);
                             JSONObject rate = new JSONObject();
 
                             for (int j = 0; j < rows.size(); j++) {
@@ -180,9 +177,9 @@ public class FundDataCrawlingService implements DataCrawlingService {
                         trs = table.select("tbody").select("tr");
                         JSONArray purchaseRate = new JSONArray();
 
-                        for (Element tr:trs) {
+                        for (Element tr : trs) {
                             rows = tr.select("td");
-                            Validator.sizeNotEquals(rows.size(),3);
+                            Validator.sizeNotEquals(rows.size(), 3);
                             JSONObject rate = new JSONObject();
 
                             for (int j = 0; j < rows.size(); j++) {
@@ -199,9 +196,9 @@ public class FundDataCrawlingService implements DataCrawlingService {
                         trs = table.select("tbody").select("tr");
                         JSONArray redeemRate = new JSONArray();
 
-                        for (Element tr:trs) {
+                        for (Element tr : trs) {
                             rows = tr.select("td");
-                            Validator.sizeNotEquals(rows.size(),3);
+                            Validator.sizeNotEquals(rows.size(), 3);
                             JSONObject rate = new JSONObject();
 
                             for (int j = 0; j < rows.size(); j++) {
@@ -218,8 +215,8 @@ public class FundDataCrawlingService implements DataCrawlingService {
                 }
             }
         }
-        dataMap.put(Url.fundDataList,fundDataListData);
-        dataMap.put(Url.fundDataHtml,JSON.toJSONString(fundDataHtml));
+        dataMap.put(Url.fundDataList, fundDataListData);
+        dataMap.put(Url.fundDataHtml, JSON.toJSONString(fundDataHtml));
 
         return JSON.toJSONString(dataMap);
     }
@@ -245,13 +242,16 @@ public class FundDataCrawlingService implements DataCrawlingService {
         Validator.sizeNotEquals(fundSourceData.size(), 25);
         fundData.setFundCode(fundSourceData.getString(0));
         fundData.setFundName(fundSourceData.getString(1));
-        fundData.setDate(StringUtils.isNotBlank(fundSourceData.getString(3)) ? DateUtil.strToDate(fundSourceData.getString(3),
+        fundData.setDate(StringUtils.isNotBlank(fundSourceData.getString(3)) ?
+                DateUtil.strToDate(fundSourceData.getString(3),
                 DateUtil.FMT_YMD1) : null);
-        fundData.setUnitNet(StringUtils.isNotBlank(fundSourceData.getString(4)) ? Double.valueOf(fundSourceData.getString(4)) :
+        fundData.setUnitNet(StringUtils.isNotBlank(fundSourceData.getString(4)) ?
+                Double.valueOf(fundSourceData.getString(4)) :
                 null);
         fundData.setAccumulatedNet(StringUtils.isNotBlank(fundSourceData.getString(5)) ?
                 Double.valueOf(fundSourceData.getString(5)) : null);
-        fundData.setGrowthRate(StringUtils.isNotBlank(fundSourceData.getString(6)) ? Double.valueOf(fundSourceData.getString(6))
+        fundData.setGrowthRate(StringUtils.isNotBlank(fundSourceData.getString(6)) ?
+                Double.valueOf(fundSourceData.getString(6))
                 : null);
         fundData.setEarningRate1w(StringUtils.isNotBlank(fundSourceData.getString(7)) ?
                 Double.valueOf(fundSourceData.getString(7)) : null);
@@ -281,11 +281,14 @@ public class FundDataCrawlingService implements DataCrawlingService {
 
         JSONObject fundDataHtml = JSON.parseObject(sourceData);
 
-        List<Rate> purchaseRate = JSONObject.parseArray(fundDataHtml.getString(FundDataKey.PURCHASE_RATE),Rate.class);
+        fundData.setFundType(fundDataHtml.getString(FundDataKey.FUND_TYPE));
+
+        List<Rate> purchaseRate = JSONObject.parseArray(fundDataHtml.getString(FundDataKey.PURCHASE_RATE), Rate.class);
         fundData.setPurchaseRate(purchaseRate);
-        List<Rate> subscribeRate = JSONObject.parseArray(fundDataHtml.getString(FundDataKey.SUBSCRIBE_RATE),Rate.class);
+        List<Rate> subscribeRate = JSONObject.parseArray(fundDataHtml.getString(FundDataKey.SUBSCRIBE_RATE),
+                Rate.class);
         fundData.setSubscribeRate(subscribeRate);
-        List<Rate> redeemRate = JSONObject.parseArray(fundDataHtml.getString(FundDataKey.REDEEM_RATE),Rate.class);
+        List<Rate> redeemRate = JSONObject.parseArray(fundDataHtml.getString(FundDataKey.REDEEM_RATE), Rate.class);
         fundData.setRedeemRate(redeemRate);
 
         JSONObject operationCost = fundDataHtml.getJSONObject(FundDataKey.OPERATION_COST);
@@ -357,7 +360,7 @@ public class FundDataCrawlingService implements DataCrawlingService {
                 return ResultUtil.buildFailedResult(ResultCode.FAILURE);
             }
             // 可能会抛异常导致fundCodeListArray或fundCodeListItem为null，下面会catch住
-            fundDataListArray =  (JSONArray) JSON.parse(fundDataListData);
+            fundDataListArray = (JSONArray) JSON.parse(fundDataListData);
             for (int i = 0; i < fundDataListArray.size(); i++) {
                 try {
                     String str = (String) fundDataListArray.get(i);
@@ -366,14 +369,14 @@ public class FundDataCrawlingService implements DataCrawlingService {
                     // 48.8245,84.2084,137.2516,74.9154,133.8760,24.4440,401.36,2010-12-29,1,137.5663,
                     // 1.50%,0.15%,1,0.15%,1,187.3288]
                     // 没有引号，不是标准json，做下转换。。。
-                    String[] strArray = str.split(",",25);
+                    String[] strArray = str.split(",", 25);
                     for (int j = 0; j < strArray.length; j++) {
                         strArray[j] = "\"" + strArray[j] + "\"";
                     }
                     String s = Arrays.toString(strArray);
                     JSONArray fundDataListItem = JSONArray.parseArray(Arrays.toString(strArray));
                     fundCode = fundDataListItem.getString(0);
-                    if(ignore.contains(fundCode)){
+                    if (ignore.contains(fundCode)) {
                         success.add(fundCode);
                         continue;
                     }
@@ -388,22 +391,22 @@ public class FundDataCrawlingService implements DataCrawlingService {
                     FundData fundData = null;
                     // 获取该基金所有档案数据的组装
                     String sourceData = crawingFundDataData(crawingRequest);
-                if (sourceData != null) {
-                    fundData = deal(sourceData);
-                } else {
-                    failure.add(fundCode);
-                    LOGGER.info("#基金数值数据爬取#单条完成，fundcode={},已完成：{}，成功：{}，失败：{}，未完成：{}，总数据：{}", fundCode,
-                            success.size() + failure.size(), success.size(), failure.size(),
-                            fundDataListArray.size() - success.size() - failure.size(), fundDataListArray.size());
-                    continue;
-                }
-                // 3.保存
-                Result result = save(fundData);
-                if (result != null && result.isSuccess()) {
-                    success.add(fundCode);
-                } else {
-                    failure.add(fundCode);
-                }
+                    if (sourceData != null) {
+                        fundData = deal(sourceData);
+                    } else {
+                        failure.add(fundCode);
+                        LOGGER.info("#基金数值数据爬取#单条完成，fundcode={},已完成：{}，成功：{}，失败：{}，未完成：{}，总数据：{}", fundCode,
+                                success.size() + failure.size(), success.size(), failure.size(),
+                                fundDataListArray.size() - success.size() - failure.size(), fundDataListArray.size());
+                        continue;
+                    }
+                    // 3.保存
+                    Result result = save(fundData);
+                    if (result != null && result.isSuccess()) {
+                        success.add(fundCode);
+                    } else {
+                        failure.add(fundCode);
+                    }
                     LOGGER.info("#基金数据爬取#单条完成，fundcode={},已完成：{}，成功：{}，失败：{}，未完成：{}，总数据：{}", fundCode,
                             success.size() + failure.size(), success.size(), failure.size(),
                             fundDataListArray.size() - success.size() - failure.size(), fundDataListArray.size());
@@ -430,7 +433,7 @@ public class FundDataCrawlingService implements DataCrawlingService {
         LOGGER.info("#基金数据爬取#全部完成，成功：{}，失败：{}，总数据：{}", success.size(), failure.size(), fundDataListArray.size());
         if (CollectionUtils.isEmpty(failure)) {
             return ResultUtil.buildSuccessResult();
-        }else{
+        } else {
             LOGGER.error("##基金数据爬取#部分失败，失败数量为{},失败记录为{},errCode={}", failure.size(), failure.toString(),
                     ResultCode.PARTIAL_FAILURE);
             return ResultUtil.buildFailedResult(ResultCode.PARTIAL_FAILURE, failure);

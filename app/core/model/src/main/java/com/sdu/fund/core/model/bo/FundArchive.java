@@ -1,9 +1,10 @@
 package com.sdu.fund.core.model.bo;
 
-import com.google.common.collect.Lists;
+import com.sdu.fund.core.model.constants.FundArchiveKey;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @program: fundproduct
@@ -77,7 +78,7 @@ public class FundArchive {
     private String riskReturnCharacteristics;
 
     /* 扩展字段*/
-    private String extInfo;
+    private Map<String,Object> extInfo;
 
     public String getFundCode() {
         return fundCode;
@@ -245,5 +246,13 @@ public class FundArchive {
 
     public void setRiskReturnCharacteristics(String riskReturnCharacteristics) {
         this.riskReturnCharacteristics = riskReturnCharacteristics;
+    }
+
+    public void setManagerNames(List<String> managerNames){
+        this.extInfo.put(FundArchiveKey.MANAGERNAMES,managerNames);
+    }
+
+    public List<String> getManagerNames(){
+        return (List<String>) this.extInfo.get(FundArchiveKey.MANAGERNAMES);
     }
 }

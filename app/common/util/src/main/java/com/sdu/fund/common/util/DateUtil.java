@@ -1,5 +1,7 @@
 package com.sdu.fund.common.util;
 
+import com.sdu.fund.common.exception.CommonException;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -65,7 +67,7 @@ public class DateUtil {
     /**
      * 将当前时间转成yyyy-MM-dd 格式
      */
-    public static String getTimeDay() {
+    public static String getDay() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();
         return sdf.format(date);
@@ -120,10 +122,26 @@ public class DateUtil {
         try {
             date = format.parse(str);
         } catch (Exception e) {
-            date=new Date();
+            throw new CommonException("strToDate转换失败,msg="+e.getMessage());
         }
         return date;
     }
+
+    /**
+     * 时间转字符串
+     * @param Date date,SimpleDateFormat sdf
+     * @return
+     */
+    public static String dateToStr(Date date,SimpleDateFormat sdf) {
+        String dateStr = null;
+        try {
+            dateStr = sdf.format(date);
+        } catch (Exception e) {
+            throw new CommonException("dateToStr转换失败,msg="+e.getMessage());
+        }
+        return dateStr;
+    }
+
 
     /**
      * 传入时间减x天

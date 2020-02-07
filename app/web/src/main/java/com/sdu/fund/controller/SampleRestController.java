@@ -19,8 +19,7 @@ package com.sdu.fund.controller;
 import com.alipay.sofa.runtime.api.annotation.SofaReference;
 import com.sdu.fund.common.result.Result;
 import com.sdu.fund.core.service.DataCrawlingService;
-import com.sdu.fund.service.shared.Task.DataCrawlingTask;
-import com.sdu.fund.service.shared.Task.Task;
+import com.sdu.fund.biz.shared.Task.Task;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

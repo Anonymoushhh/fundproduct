@@ -31,8 +31,13 @@
         </dependency>
 
         <dependency>
+        <groupId>com.sdu.fund</groupId>
+        <artifactId>fundproduct-common-dal</artifactId>
+    </dependency>
+
+        <dependency>
             <groupId>com.sdu.fund</groupId>
-            <artifactId>fundproduct-common-dal</artifactId>
+            <artifactId>fundproduct-biz-shared</artifactId>
         </dependency>
     </dependencies>
 
