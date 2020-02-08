@@ -9,21 +9,21 @@ package com.sdu.fund.biz.shared.enums;
 public enum FundTypeEnum {
 
     // 股票型
-    SHARES(0,"SHARES"),
+    SHARES(0,"股票型"),
     // 债券型
-    BOND(1,"BOND"),
+    BOND(1,"债券型"),
     // 货币型
-    CURRENCY(2,"CURRENCY"),
+    CURRENCY(2,"货币型"),
     // 混合型
-    MIX(3,"MIX"),
+    MIX(3,"混合型"),
     // 保本型
-    CAPITAL(4,"CAPITAL"),
+    CAPITAL(4,"保本型"),
     // 交易型开放式指数基金
     ETF(5,"ETF"),
     //
     QDII(6,"QDII"),
     // 分级基金
-    STRUCTURED(7,"STRUCTURED"),
+    STRUCTURED(7,"分级基金"),
     // fund of fund
     FOF(8,"FOF"),;
     /**

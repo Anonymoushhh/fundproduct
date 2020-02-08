@@ -18,7 +18,7 @@ public class FundArchiveQueryServiceImpl implements FundArchiveQueryService {
     private FundArchiveRepository fundArchiveRepository;
 
     @Override
-    public FundArchiveVO queryFundArchive(String fundCode) {
+    public FundArchiveVO queryFundArchiveInfoList(String fundCode) {
         FundArchive fundArchive = fundArchiveRepository.get(fundCode);
         return new FundArchiveVO().convert(fundArchive);
     }

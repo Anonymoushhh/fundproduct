@@ -40,6 +40,7 @@ public class FundListController {
         }catch(Exception e){
             LOGGER.error("基金列表查询失败，errCode={},msg={}", ResultCode.SERVER_EXCEPTION,
                     e.getMessage());
+            return Response.buildErrorResponse();
         }
         return Response.buildSuccessResponse(rankVOS);
     }

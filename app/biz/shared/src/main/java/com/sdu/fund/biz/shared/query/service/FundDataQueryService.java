@@ -1,7 +1,7 @@
 package com.sdu.fund.biz.shared.query.service;
 
 
-import com.sdu.fund.biz.shared.query.vo.NetValuesVO;
+import com.sdu.fund.biz.shared.query.vo.*;
 
 
 /**
@@ -13,5 +13,16 @@ import com.sdu.fund.biz.shared.query.vo.NetValuesVO;
 public interface FundDataQueryService {
 
     public NetValuesVO queryNetValues(String fundCode);
+
+    public TradeStatusVO queryTradeStatus(String fundCode);
+
+    public TradeLimitVO queryTradeLimit(String fundCode);
+
+    public PurchaseStepsVO queryPurchaseSteps(String fundCode);
+
+    public RedeemStepsVO queryRedeemSteps(String fundCode);
+
+    public RatesVO queryRates(String fundCode);
+
 
 }

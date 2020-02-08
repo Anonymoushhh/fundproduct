@@ -1,5 +1,6 @@
 package com.sdu.fund.vo;
 
+
 import com.sdu.fund.enums.CodeEnum;
 
 /**

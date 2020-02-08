@@ -27,9 +27,6 @@ public class FundCommonQueryServiceImpl implements FundCommonQueryService {
     @SofaReference
     private FundDataRepository fundDataRepository;
 
-    @SofaReference
-    private FundManagerRepository fundManagerRepository;
-
     @Override
     public List<RankVO> queryFundList(Integer sortType, Integer fundType, Integer gainType, Integer curPage,
                                       Integer pageSize) {
@@ -49,11 +46,5 @@ public class FundCommonQueryServiceImpl implements FundCommonQueryService {
             }
         }
         return rankVOS;
-    }
-
-    @Override
-    public FundManagerVO queryFundManager(String managerId) {
-        FundManager fundManager = fundManagerRepository.get(managerId);
-        return new FundManagerVO().convert(fundManager);
     }
 }

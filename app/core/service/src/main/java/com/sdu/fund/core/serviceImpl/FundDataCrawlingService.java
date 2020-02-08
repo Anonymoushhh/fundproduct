@@ -310,8 +310,8 @@ public class FundDataCrawlingService implements DataCrawlingService {
         fundData.setRedeemComfirmDay(tradeConfirmDay.getString(FundDataKey.REDEEM_COMFIRM_DAY));
 
         JSONObject tradeStatus = fundDataHtml.getJSONObject(FundDataKey.TRADE_STATUS);
-        fundData.setBuyComfirmDay(tradeStatus.getString(FundDataKey.PURCHASE_STATUS));
-        fundData.setRedeemComfirmDay(tradeStatus.getString(FundDataKey.REDEEM_STATUS));
+        fundData.setPurchaseStatus(tradeStatus.getString(FundDataKey.PURCHASE_STATUS));
+        fundData.setRedeemStatus(tradeStatus.getString(FundDataKey.REDEEM_STATUS));
 
         return fundData;
     }
@@ -352,7 +352,7 @@ public class FundDataCrawlingService implements DataCrawlingService {
             // 默认查过去一年的数据
             String url = StringUtils.replace(Url.fundDataList, "startDate",
                     DateUtil.getTimeDayByString(DateUtil.getStringBeforeYears(new Date(), 1), DateUtil.FMT_YMD1));
-            url = StringUtils.replace(url, "endDate", DateUtil.getTimeDay());
+            url = StringUtils.replace(url, "endDate", DateUtil.getDay());
             fundDataListCrawingRequest.setUrl(url);
             String fundDataListData = crawingFundDataListData(fundDataListCrawingRequest);
             if (fundDataListData == null) {

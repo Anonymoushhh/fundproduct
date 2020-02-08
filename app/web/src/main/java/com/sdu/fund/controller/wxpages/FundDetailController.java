@@ -42,6 +42,7 @@ public class FundDetailController {
         }catch(Exception e){
             LOGGER.error("基金详情topMessage查询失败，errCode={},msg={}", ResultCode.SERVER_EXCEPTION,
                     e.getMessage());
+            return Response.buildErrorResponse();
         }
         return Response.buildSuccessResponse(topMessageVO);
     }
@@ -54,6 +55,7 @@ public class FundDetailController {
         }catch(Exception e){
             LOGGER.error("基金详情净值查询失败，errCode={},msg={}", ResultCode.SERVER_EXCEPTION,
                     e.getMessage());
+            return Response.buildErrorResponse();
         }
         return Response.buildSuccessResponse(netValuesVO);
     }
@@ -66,6 +68,7 @@ public class FundDetailController {
         }catch(Exception e){
             LOGGER.error("基金估算净值查询失败，errCode={},msg={}", ResultCode.SERVER_EXCEPTION,
                     e.getMessage());
+            return Response.buildErrorResponse();
         }
         return Response.buildSuccessResponse(netValuesVO);
     }
@@ -78,6 +81,7 @@ public class FundDetailController {
         }catch(Exception e){
             LOGGER.error("基金业绩信息查询失败，errCode={},msg={}", ResultCode.SERVER_EXCEPTION,
                     e.getMessage());
+            return Response.buildErrorResponse();
         }
         return Response.buildSuccessResponse(netValuesVO);
     }
@@ -90,6 +94,7 @@ public class FundDetailController {
         }catch(Exception e){
             LOGGER.error("基金footerMessage查询失败，errCode={},msg={}", ResultCode.SERVER_EXCEPTION,
                     e.getMessage());
+            return Response.buildErrorResponse();
         }
         return Response.buildSuccessResponse(footerMessageVO);
     }

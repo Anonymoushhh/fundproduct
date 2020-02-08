@@ -94,6 +94,12 @@ public class FundData {
     /* 卖出确认日*/
     private String redeemComfirmDay;
 
+    /* 申购状态*/
+    private String purchaseStatus;
+
+    /* 赎回状态*/
+    private String redeemStatus;
+
     /* 追加购买最小金额*/
     private Double supplementAmount;
 
@@ -142,6 +148,22 @@ public class FundData {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public String getPurchaseStatus() {
+        return purchaseStatus;
+    }
+
+    public void setPurchaseStatus(String purchaseStatus) {
+        this.purchaseStatus = purchaseStatus;
+    }
+
+    public String getRedeemStatus() {
+        return redeemStatus;
+    }
+
+    public void setRedeemStatus(String redeemStatus) {
+        this.redeemStatus = redeemStatus;
     }
 
     public Double getUnitNet() {

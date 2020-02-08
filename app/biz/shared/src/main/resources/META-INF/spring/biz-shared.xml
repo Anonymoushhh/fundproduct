@@ -10,13 +10,15 @@
         <sofa:binding.jvm/>
     </sofa:service>
 
-    <bean class="com.sdu.fund.biz.shared.query.serviceImpl.FundCommonQueryServiceImpl" id="fundCommonQueryService"/>
-    <sofa:service ref="fundCommonQueryService" interface="com.sdu.fund.biz.shared.query.service.FundCommonQueryService">
+    <!--    微信页面专属查询类-->
+    <bean class="com.sdu.fund.biz.shared.query.serviceImpl.wxpages.FundDetailPageServiceImpl" id="fundDetailPageService"/>
+    <sofa:service ref="fundDetailPageService" interface="com.sdu.fund.biz.shared.query.service.wxpages.FundDetailPageService">
         <sofa:binding.jvm/>
     </sofa:service>
 
-    <bean class="com.sdu.fund.biz.shared.query.serviceImpl.wxpages.FundDetailPageServiceImpl" id="fundDetailPageService"/>
-    <sofa:service ref="fundDetailPageService" interface="com.sdu.fund.biz.shared.query.service.wxpages.FundDetailPageService">
+    <!--    通用查询类-->
+    <bean class="com.sdu.fund.biz.shared.query.serviceImpl.FundCommonQueryServiceImpl" id="fundCommonQueryService"/>
+    <sofa:service ref="fundCommonQueryService" interface="com.sdu.fund.biz.shared.query.service.FundCommonQueryService">
         <sofa:binding.jvm/>
     </sofa:service>
 
@@ -28,6 +30,18 @@
     <bean class="com.sdu.fund.biz.shared.query.serviceImpl.FundArchiveQueryServiceImpl" id="fundArchiveQueryService"/>
     <sofa:service ref="fundArchiveQueryService"
                   interface="com.sdu.fund.biz.shared.query.service.FundArchiveQueryService">
+        <sofa:binding.jvm/>
+    </sofa:service>
+
+    <bean class="com.sdu.fund.biz.shared.query.serviceImpl.FundCompanyQueryServiceImpl" id="fundCompanyQueryService"/>
+    <sofa:service ref="fundCompanyQueryService"
+                  interface="com.sdu.fund.biz.shared.query.service.FundCompanyQueryService">
+        <sofa:binding.jvm/>
+    </sofa:service>
+
+    <bean class="com.sdu.fund.biz.shared.query.serviceImpl.FundManagerQueryServiceImpl" id="fundManagerQueryService"/>
+    <sofa:service ref="fundManagerQueryService"
+                  interface="com.sdu.fund.biz.shared.query.service.FundManagerQueryService">
         <sofa:binding.jvm/>
     </sofa:service>
 </beans>

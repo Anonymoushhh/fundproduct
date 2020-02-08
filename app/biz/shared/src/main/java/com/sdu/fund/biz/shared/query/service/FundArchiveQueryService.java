@@ -12,6 +12,6 @@ import com.sdu.fund.biz.shared.query.vo.FundArchiveVO;
  **/
 public interface FundArchiveQueryService {
 
-    public FundArchiveVO queryFundArchive(String fundCode);
+    public FundArchiveVO queryFundArchiveInfoList(String fundCode);
 
 }

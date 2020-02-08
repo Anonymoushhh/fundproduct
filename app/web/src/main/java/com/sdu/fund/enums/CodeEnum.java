@@ -30,7 +30,7 @@ public enum CodeEnum {
     }
 
     public static CodeEnum getEnumByCode(Integer code) {
-        for(CodeEnum e:CodeEnum.values()){
+        for(CodeEnum e: CodeEnum.values()){
             if(code == e.getCode()){
                 return e;
             }

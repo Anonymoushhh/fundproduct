@@ -31,12 +31,13 @@ public class FundArchiveController {
     private FundArchiveQueryService fundArchiveQueryService;
 
     @RequestMapping(value = "/archive", method = RequestMethod.GET)
-    public Response<FundArchiveVO> queryFundManagers(@RequestParam(value = "fundCode") String fundCode) {
+    public Response<FundArchiveVO> queryFundArchive(@RequestParam(value = "fundCode") String fundCode) {
         FundArchiveVO fundArchiveVO = new FundArchiveVO();
         try {
-            fundArchiveVO = fundArchiveQueryService.queryFundArchive(fundCode);
+            fundArchiveVO = fundArchiveQueryService.queryFundArchiveInfoList(fundCode);
         } catch (Exception e) {
             LOGGER.error("基金档案查询失败，fundCode={},msg={}", fundCode, e.getMessage());
+            return Response.buildErrorResponse();
         }
 
         return Response.buildSuccessResponse(fundArchiveVO);

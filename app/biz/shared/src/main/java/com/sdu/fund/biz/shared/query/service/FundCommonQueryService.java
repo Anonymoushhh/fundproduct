@@ -17,5 +17,4 @@ public interface FundCommonQueryService {
     public List<RankVO> queryFundList(Integer sortType, Integer fundType, Integer gainType, Integer curPage,
                                       Integer pageSize);
 
-    public FundManagerVO queryFundManager(String managerId);
 }
