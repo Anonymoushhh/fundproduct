@@ -13,6 +13,6 @@ import java.util.List;
  **/
 public interface FundDataRepository extends Repository<FundData>{
 
-    public Result<List<FundData>> getFundList(String fundType, String gainType, Integer curIndex,
+    public Result<List<FundData>> getFundList(Integer fundType, String gainType, Integer curIndex,
                                               Integer pageSize);
 }

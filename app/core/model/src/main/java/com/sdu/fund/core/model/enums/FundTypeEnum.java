@@ -1,4 +1,6 @@
-package com.sdu.fund.biz.shared.enums;
+package com.sdu.fund.core.model.enums;
+
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * @program: fundproduct
@@ -25,7 +27,9 @@ public enum FundTypeEnum {
     // 分级基金
     STRUCTURED(7,"分级基金"),
     // fund of fund
-    FOF(8,"FOF"),;
+    FOF(8,"FOF"),
+    // 指数型
+    INDEX(9,"指数型"),;
     /**
      * 响应状态码
      */
@@ -43,7 +47,7 @@ public enum FundTypeEnum {
 
     public static FundTypeEnum getEnumByCode(Integer code) {
         for(FundTypeEnum e:FundTypeEnum.values()){
-            if(code == e.getCode()){
+            if(Integer.valueOf(e.getCode()).equals(code)){
                 return e;
             }
         }
@@ -52,7 +56,7 @@ public enum FundTypeEnum {
 
     public static FundTypeEnum getEnumByMsg(String msg) {
         for(FundTypeEnum e:FundTypeEnum.values()){
-            if(msg == e.getMsg()){
+            if(StringUtils.equals(msg,e.getMsg())){
                 return e;
             }
         }

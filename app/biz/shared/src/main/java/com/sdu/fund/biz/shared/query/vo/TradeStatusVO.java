@@ -21,9 +21,12 @@ public class TradeStatusVO {
     private List<BaseEntry> listData;
 
     public TradeStatusVO convert(FundData fundData) {
+        if(fundData==null){
+            return new TradeStatusVO();
+        }
         List<BaseEntry> listData = Lists.newArrayList();
-        listData.add(new BaseEntry(TradeStatusVOKey.PURCHASE_STATUS, fundData.getPurchaseStatus()));
-        listData.add(new BaseEntry(TradeStatusVOKey.REDEEM_STATUS, fundData.getRedeemStatus()));
+        listData.add(new BaseEntry(TradeStatusVOKey.PURCHASE_STATUS, fundData.getPurchaseStatus().getMsg()));
+        listData.add(new BaseEntry(TradeStatusVOKey.REDEEM_STATUS, fundData.getRedeemStatus().getMsg()));
         listData.add(new BaseEntry(TradeStatusVOKey.TIMING_INVESTMENT_STATUS, "暂不支持"));
         this.listData = listData;
         return this;

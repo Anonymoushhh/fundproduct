@@ -1,5 +1,7 @@
 package com.sdu.fund.core.model.bo;
 
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.sdu.fund.core.model.constants.FundArchiveKey;
 
 import java.util.Date;
@@ -78,7 +80,7 @@ public class FundArchive {
     private String riskReturnCharacteristics;
 
     /* 扩展字段*/
-    private Map<String,Object> extInfo;
+    private Map<String,Object> extInfo = Maps.newHashMap();
 
     public String getFundCode() {
         return fundCode;
@@ -253,6 +255,9 @@ public class FundArchive {
     }
 
     public List<String> getManagerNames(){
+        if(this.extInfo.get(FundArchiveKey.MANAGERNAMES)==null){
+            return Lists.newArrayList();
+        }
         return (List<String>) this.extInfo.get(FundArchiveKey.MANAGERNAMES);
     }
 }

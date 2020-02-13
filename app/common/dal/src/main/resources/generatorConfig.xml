@@ -9,7 +9,7 @@
     <classPathEntry location="C:\Users\Anonymous\.m2\repository\mysql\mysql-connector-java\5.1.46\mysql-connector-java-5.1.46.jar" />
 
     <context id="fund" targetRuntime="MyBatis3">
-
+        <property name="mergeable" value="true"/>
         <!-- 数据库链接URL、用户名、密码 -->
         <jdbcConnection driverClass="${jdbc.driverClassName}"
                         connectionURL="${jdbc.url}"
@@ -34,47 +34,47 @@
         </javaModelGenerator>
 
         <!--Mapper映射文件生成所在的目录 为每一个数据库的表生成对应的SqlMap文件 -->
-        <sqlMapGenerator targetPackage="mappers"
-                         targetProject="app/common/dal/src/main/resources">
-            <property name="enableSubPackages" value="true"/>
-        </sqlMapGenerator>
+                <sqlMapGenerator targetPackage="mappers"
+                                 targetProject="app/common/dal/src/main/resources">
+                    <property name="enableSubPackages" value="true"/>
+                </sqlMapGenerator>
 
         <!-- 客户端代码，生成易于使用的针对Model对象和XML配置文件 的代码
                 type="ANNOTATEDMAPPER",生成Java Model 和基于注解的Mapper对象
                 type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象
                 type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
         -->
-        <javaClientGenerator targetPackage="com.sdu.fund.common.dal.mapper"
-                             targetProject="app/common/dal/src/main/java" type="XMLMAPPER">
-            <property name="enableSubPackages" value="true"/>
-        </javaClientGenerator>
+                <javaClientGenerator targetPackage="com.sdu.fund.common.dal.mapper"
+                                     targetProject="app/common/dal/src/main/java" type="XMLMAPPER">
+                    <property name="enableSubPackages" value="true"/>
+                </javaClientGenerator>
 
 
         <!-- 列出要生成代码的所有表，这里配置的是不生成Example文件 -->
-        <table tableName="fundArchive" domainObjectName="FundArchiveDo" mapperName="FundArchiveMapper"
-               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
-               enableSelectByExample="false" selectByExampleQueryId="false" >
-            <property name="useActualColumnNames" value="false"/>
-            <columnOverride column="investment_target" javaType="java.lang.String" jdbcType="VARCHAR" />
-            <columnOverride column="investment_concept" javaType="java.lang.String" jdbcType="VARCHAR" />
-            <columnOverride column="investment_scope" javaType="java.lang.String" jdbcType="VARCHAR" />
-            <columnOverride column="investment_strategy" javaType="java.lang.String" jdbcType="VARCHAR" />
-            <columnOverride column="dividend_policy" javaType="java.lang.String" jdbcType="VARCHAR" />
-        </table>
-        <table tableName="fundCompany" domainObjectName="FundCompanyDo" mapperName="FundCompanyMapper"
-               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
-               enableSelectByExample="false" selectByExampleQueryId="false" >
-            <property name="useActualColumnNames" value="false"/>
-        </table>
+<!--        <table tableName="fundArchive" domainObjectName="FundArchiveDo" mapperName="FundArchiveMapper"-->
+<!--               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false" selectByExampleQueryId="false" >-->
+<!--            <property name="useActualColumnNames" value="false"/>-->
+<!--            <columnOverride column="investment_target" javaType="java.lang.String" jdbcType="VARCHAR" />-->
+<!--            <columnOverride column="investment_concept" javaType="java.lang.String" jdbcType="VARCHAR" />-->
+<!--            <columnOverride column="investment_scope" javaType="java.lang.String" jdbcType="VARCHAR" />-->
+<!--            <columnOverride column="investment_strategy" javaType="java.lang.String" jdbcType="VARCHAR" />-->
+<!--            <columnOverride column="dividend_policy" javaType="java.lang.String" jdbcType="VARCHAR" />-->
+<!--        </table>-->
+<!--        <table tableName="fundCompany" domainObjectName="FundCompanyDo" mapperName="FundCompanyMapper"-->
+<!--               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false" selectByExampleQueryId="false" >-->
+<!--            <property name="useActualColumnNames" value="false"/>-->
+<!--        </table>-->
         <table tableName="fundData" domainObjectName="FundDataDo" mapperName="FundDataMapper"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false" >
             <property name="useActualColumnNames" value="false"/>
         </table>
-        <table tableName="fundManager" domainObjectName="FundManagerDo" mapperName="FundManagerMapper"
-               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
-               enableSelectByExample="false" selectByExampleQueryId="false" >
-            <property name="useActualColumnNames" value="false"/>
-        </table>
+<!--        <table tableName="fundManager" domainObjectName="FundManagerDo" mapperName="FundManagerMapper"-->
+<!--               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false" selectByExampleQueryId="false" >-->
+<!--            <property name="useActualColumnNames" value="false"/>-->
+<!--        </table>-->
     </context>
 </generatorConfiguration>

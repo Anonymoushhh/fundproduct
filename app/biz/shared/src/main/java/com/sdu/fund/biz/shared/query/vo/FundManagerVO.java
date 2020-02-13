@@ -20,10 +20,14 @@ public class FundManagerVO {
     private List<BaseEntry> listData;
 
     public FundManagerVO convert(FundManager fundManager) {
+        if (fundManager == null) {
+            return new FundManagerVO();
+        }
         this.desc = fundManager.getManagerIntroduction();
         List<BaseEntry> listData = Lists.newArrayList();
         listData.add(new BaseEntry(FundManagerVOKey.COMPANY_NAME, fundManager.getCompanyName()));
-        listData.add(new BaseEntry(FundManagerVOKey.SERVICE_DATE, fundManager.getServiceDate() + "天"));
+        listData.add(new BaseEntry(FundManagerVOKey.SERVICE_DATE,
+                fundManager.getServiceDate() != null ? (fundManager.getServiceDate() + "天") : null));
         listData.add(new BaseEntry(FundManagerVOKey.ASSETS_SCALE, fundManager.getAssetsScale()));
         listData.add(new BaseEntry(FundManagerVOKey.BEST_RETURN_HISTORY, fundManager.getBestReturnHistory()));
         listData.add(new BaseEntry(FundManagerVOKey.BEST_RETURN_NOW, fundManager.getBestReturnNameNow()));

@@ -13,13 +13,16 @@ import java.util.List;
 public class FooterMessageVO {
 
     private List<String> managerIds;
-    private List<String> managerName;
+    private List<String> managerNames;
     private String fundCompanyId;
     private String fundCompanyName;
 
     public FooterMessageVO convert(FundArchive fundArchive){
+        if(fundArchive==null){
+            return new FooterMessageVO();
+        }
         this.managerIds = fundArchive.getManagerIds();
-        this.managerName = fundArchive.getManagerNames();
+        this.managerNames = fundArchive.getManagerNames();
         this.fundCompanyId = fundArchive.getCompanyCode();
         this.fundCompanyName = fundArchive.getCompanyName();
         return this;
@@ -32,12 +35,12 @@ public class FooterMessageVO {
         this.managerIds = managerIds;
     }
 
-    public List<String> getManagerName() {
-        return managerName;
+    public List<String> getManagerNames() {
+        return managerNames;
     }
 
-    public void setManagerName(List<String> managerName) {
-        this.managerName = managerName;
+    public void setManagerNames(List<String> managerNames) {
+        this.managerNames = managerNames;
     }
 
     public String getFundCompanyId() {

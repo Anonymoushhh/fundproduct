@@ -17,6 +17,9 @@ public class RankVO {
     private Double gain;
 
     public RankVO convert(FundData fundData){
+        if(fundData==null){
+            return new RankVO();
+        }
         this.fundCode = fundData.getFundCode();
         this.name = fundData.getFundName();
         this.netValue = fundData.getUnitNet();
@@ -41,7 +44,7 @@ public class RankVO {
         }else if(fundData.getEarningRateFromEstablish()!=null){
             this.gain = fundData.getEarningRateFromEstablish();
         }else{
-            gain = null;
+            this.gain = null;
         }
         return this;
     }

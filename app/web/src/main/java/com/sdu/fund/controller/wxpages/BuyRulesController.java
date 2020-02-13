@@ -28,7 +28,7 @@ public class BuyRulesController {
     @SofaReference
     private FundDataQueryService fundDataQueryService;
 
-    @RequestMapping(value = "/buyRules", method = RequestMethod.POST)
+    @RequestMapping(value = "/buyRules", method = RequestMethod.GET)
     public Response<BuyRulesVO> queryFundCompany(@RequestParam(value = "fundCode") String fundCode) {
         BuyRulesVO buyRulesVO = new BuyRulesVO();
         try {
@@ -44,7 +44,7 @@ public class BuyRulesController {
             buyRulesVO.setRedeemStepsVO(redeemStepsVO);
             buyRulesVO.setRatesVO(ratesVO);
         } catch (Exception e) {
-            LOGGER.error("基金公司查询失败，fundCompanyId={},msg={}", fundCode,
+            LOGGER.error("基金购买规则查询失败，fundCompanyId={},msg={}", fundCode,
                     e.getMessage());
             return Response.buildErrorResponse();
         }

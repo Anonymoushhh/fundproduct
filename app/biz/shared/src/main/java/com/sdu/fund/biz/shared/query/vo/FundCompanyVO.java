@@ -18,28 +18,33 @@ import java.util.List;
  **/
 public class FundCompanyVO {
 
-    private String companyName;
+    private String fundCompanyName;
     private List<BaseEntry> listData;
 
     public FundCompanyVO convert(FundCompany fundCompany) {
-        this.companyName = fundCompany.getFundCompanyName();
+        if (fundCompany == null) {
+            return new FundCompanyVO();
+        }
+        this.fundCompanyName = fundCompany.getFundCompanyName();
         List<BaseEntry> listData = Lists.newArrayList();
         listData.add(new BaseEntry(FundCompanyVOKey.FUND_COMPANY_NAME_ABBR, fundCompany.getFundCompanyNameAbbr()));
-        listData.add(new BaseEntry(FundCompanyVOKey.GRADE, fundCompany.getGrade() + "星评级"));
+        listData.add(new BaseEntry(FundCompanyVOKey.GRADE, fundCompany.getGrade() != null ? (fundCompany.getGrade() +
+                "星评级") : null));
         listData.add(new BaseEntry(FundCompanyVOKey.MANAGEMENT_SCALE, fundCompany.getManagementScale()));
-        listData.add(new BaseEntry(FundCompanyVOKey.FUND_AMOUNT, fundCompany.getFundAmount() + "只"));
+        listData.add(new BaseEntry(FundCompanyVOKey.FUND_AMOUNT,
+                fundCompany.getFundAmount() != null ? (fundCompany.getFundAmount() + "只") : null));
         listData.add(new BaseEntry(FundCompanyVOKey.ESTABLISH_DATE, DateUtil.dateToStr(fundCompany.getEstablishDate()
                 , DateUtil.FMT_YMD1)));
         this.listData = listData;
         return this;
     }
 
-    public String getCompanyName() {
-        return companyName;
+    public String getFundCompanyName() {
+        return fundCompanyName;
     }
 
-    public void setCompanyName(String companyName) {
-        this.companyName = companyName;
+    public void setFundCompanyName(String fundCompanyName) {
+        this.fundCompanyName = fundCompanyName;
     }
 
     public List<BaseEntry> getListData() {

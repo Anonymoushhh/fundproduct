@@ -1,5 +1,10 @@
 package com.sdu.fund.core.model.bo;
 
+import com.sdu.fund.core.model.enums.ConfirmDayEnum;
+import com.sdu.fund.core.model.enums.FundTypeEnum;
+import com.sdu.fund.core.model.enums.PurchaseStatusEnum;
+import com.sdu.fund.core.model.enums.RedeemStatusEnum;
+
 import java.util.Date;
 import java.util.List;
 
@@ -17,7 +22,7 @@ public class FundData {
     /* 基金名称*/
     private String fundName;
 
-    private String fundType;
+    private FundTypeEnum fundType;
 
     /* 更新日期*/
     private Date date;
@@ -89,16 +94,16 @@ public class FundData {
     private Double purchaseLimitOneDay;
 
     /* 买入确认日*/
-    private String buyComfirmDay;
+    private ConfirmDayEnum buyConfirmDay;
 
     /* 卖出确认日*/
-    private String redeemComfirmDay;
+    private ConfirmDayEnum redeemConfirmDay;
 
     /* 申购状态*/
-    private String purchaseStatus;
+    private PurchaseStatusEnum purchaseStatus;
 
     /* 赎回状态*/
-    private String redeemStatus;
+    private RedeemStatusEnum redeemStatus;
 
     /* 追加购买最小金额*/
     private Double supplementAmount;
@@ -134,11 +139,11 @@ public class FundData {
         this.fundName = fundName;
     }
 
-    public String getFundType() {
+    public FundTypeEnum getFundType() {
         return fundType;
     }
 
-    public void setFundType(String fundType) {
+    public void setFundType(FundTypeEnum fundType) {
         this.fundType = fundType;
     }
 
@@ -150,20 +155,20 @@ public class FundData {
         this.date = date;
     }
 
-    public String getPurchaseStatus() {
-        return purchaseStatus;
+    public Double getEstimatedNet() {
+        return estimatedNet;
     }
 
-    public void setPurchaseStatus(String purchaseStatus) {
-        this.purchaseStatus = purchaseStatus;
+    public void setEstimatedNet(Double estimatedNet) {
+        this.estimatedNet = estimatedNet;
     }
 
-    public String getRedeemStatus() {
-        return redeemStatus;
+    public Double getGainRangeToday() {
+        return gainRangeToday;
     }
 
-    public void setRedeemStatus(String redeemStatus) {
-        this.redeemStatus = redeemStatus;
+    public void setGainRangeToday(Double gainRangeToday) {
+        this.gainRangeToday = gainRangeToday;
     }
 
     public Double getUnitNet() {
@@ -326,40 +331,40 @@ public class FundData {
         this.purchaseLimitOneDay = purchaseLimitOneDay;
     }
 
-    public String getBuyComfirmDay() {
-        return buyComfirmDay;
+    public ConfirmDayEnum getBuyConfirmDay() {
+        return buyConfirmDay;
     }
 
-    public void setBuyComfirmDay(String buyComfirmDay) {
-        this.buyComfirmDay = buyComfirmDay;
+    public void setBuyConfirmDay(ConfirmDayEnum buyConfirmDay) {
+        this.buyConfirmDay = buyConfirmDay;
     }
 
-    public String getRedeemComfirmDay() {
-        return redeemComfirmDay;
+    public ConfirmDayEnum getRedeemConfirmDay() {
+        return redeemConfirmDay;
     }
 
-    public void setRedeemComfirmDay(String redeemComfirmDay) {
-        this.redeemComfirmDay = redeemComfirmDay;
+    public void setRedeemConfirmDay(ConfirmDayEnum redeemConfirmDay) {
+        this.redeemConfirmDay = redeemConfirmDay;
+    }
+
+    public PurchaseStatusEnum getPurchaseStatus() {
+        return purchaseStatus;
+    }
+
+    public void setPurchaseStatus(PurchaseStatusEnum purchaseStatus) {
+        this.purchaseStatus = purchaseStatus;
+    }
+
+    public RedeemStatusEnum getRedeemStatus() {
+        return redeemStatus;
+    }
+
+    public void setRedeemStatus(RedeemStatusEnum redeemStatus) {
+        this.redeemStatus = redeemStatus;
     }
 
     public Double getSupplementAmount() {
         return supplementAmount;
-    }
-
-    public Double getEstimatedNet() {
-        return estimatedNet;
-    }
-
-    public void setEstimatedNet(Double estimatedNet) {
-        this.estimatedNet = estimatedNet;
-    }
-
-    public Double getGainRangeToday() {
-        return gainRangeToday;
-    }
-
-    public void setGainRangeToday(Double gainRangeToday) {
-        this.gainRangeToday = gainRangeToday;
     }
 
     public void setSupplementAmount(Double supplementAmount) {
@@ -405,5 +410,4 @@ public class FundData {
     public void setExtInfo(String extInfo) {
         this.extInfo = extInfo;
     }
-
 }

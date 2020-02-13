@@ -28,7 +28,7 @@ public enum SortTypeEnum {
 
     public static SortTypeEnum getEnumByCode(Integer code) {
         for(SortTypeEnum e:SortTypeEnum.values()){
-            if(code == e.getCode()){
+            if(Integer.valueOf(e.getCode()).equals(code)){
                 return e;
             }
         }

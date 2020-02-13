@@ -45,7 +45,7 @@ public enum GainTypeEnum {
 
     public static GainTypeEnum getEnumByCode(Integer code) {
         for(GainTypeEnum e:GainTypeEnum.values()){
-            if(code == e.getCode()){
+            if(Integer.valueOf(e.getCode()).equals(code)){
                 return e;
             }
         }

@@ -1,5 +1,6 @@
 package com.sdu.fund.biz.shared.query.vo;
 
+import com.sdu.fund.common.util.NumberUtil;
 import com.sdu.fund.core.model.bo.FundData;
 
 /**
@@ -19,17 +20,31 @@ public class NetValuesVO {
     private String gainRangeToday;
 
     public NetValuesVO convert(FundData fundData) {
+        if (fundData == null) {
+            return new NetValuesVO();
+        }
         this.unitNet = fundData.getUnitNet();
         this.accumulatedNet = fundData.getAccumulatedNet();
         if (fundData.getGrowthRate() != null) {
             this.gainLastDay = fundData.getGrowthRate() >= 0;
         }
-        this.gainRangeLastDay = fundData.getGrowthRate() + "%";
+        if(this.gainLastDay!=null&&this.gainLastDay){
+            this.gainRangeLastDay = fundData.getGrowthRate() != null ? ("+"+ NumberUtil.getDouble_to2_no4no5(fundData.getGrowthRate()) +
+                    "%") : null;
+        }else{
+            this.gainRangeLastDay = fundData.getGrowthRate() != null ? (fundData.getGrowthRate() + "%") : null;
+        }
+
         this.estimatedNet = fundData.getEstimatedNet();
         if (fundData.getGainRangeToday() != null) {
-            this.gainLastDay = fundData.getGainRangeToday() >= 0;
+            this.gainToday = fundData.getGainRangeToday() >= 0;
         }
-        this.gainRangeToday = fundData.getGainRangeToday() + "%";
+        if(this.gainToday!=null&&this.gainToday){
+            this.gainRangeToday = fundData.getGainRangeToday() != null ? ("+"+fundData.getGainRangeToday() + "%") : null;
+        }else{
+            this.gainRangeToday = fundData.getGainRangeToday() != null ?
+                    (NumberUtil.getDouble_to2_no4no5(fundData.getGainRangeToday()) + "%") : null;
+        }
         return this;
     }
 

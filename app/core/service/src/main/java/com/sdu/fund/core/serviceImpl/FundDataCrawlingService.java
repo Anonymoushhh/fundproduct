@@ -16,11 +16,14 @@ import com.sdu.fund.common.util.TypeConvertUtil;
 import com.sdu.fund.common.validator.Validator;
 import com.sdu.fund.core.constants.FundDataKey;
 import com.sdu.fund.core.constants.Url;
-import com.sdu.fund.core.converter.RateAndDayFormatConvert;
+import com.sdu.fund.core.converter.FundTypeConverter;
+import com.sdu.fund.core.converter.RateAndDayFormatConverter;
 import com.sdu.fund.core.model.bo.FundData;
 import com.sdu.fund.core.model.bo.Rate;
+import com.sdu.fund.core.model.enums.ConfirmDayEnum;
+import com.sdu.fund.core.model.enums.PurchaseStatusEnum;
+import com.sdu.fund.core.model.enums.RedeemStatusEnum;
 import com.sdu.fund.core.repository.FundDataRepository;
-import com.sdu.fund.core.repository.FundDataRepositoryImpl;
 import com.sdu.fund.core.request.CrawingRequest;
 import com.sdu.fund.core.service.DataCrawlingService;
 import org.apache.commons.collections4.CollectionUtils;
@@ -145,11 +148,11 @@ public class FundDataCrawlingService implements DataCrawlingService {
                         JSONObject operationCost = new JSONObject();
                         rows = trs.get(0).select("td.w135");
                         operationCost.put(FundDataKey.MANAGER_RATE,
-                                RateAndDayFormatConvert.convert2Format(rows.get(0).text()));
+                                RateAndDayFormatConverter.convert2Format(rows.get(0).text()));
                         operationCost.put(FundDataKey.TRUSTEE_RATE,
-                                RateAndDayFormatConvert.convert2Format(rows.get(1).text()));
+                                RateAndDayFormatConverter.convert2Format(rows.get(1).text()));
                         operationCost.put(FundDataKey.SERVICE_RATE,
-                                RateAndDayFormatConvert.convert2Format(rows.get(2).text()));
+                                RateAndDayFormatConverter.convert2Format(rows.get(2).text()));
                         fundDataHtml.put(FundDataKey.OPERATION_COST,
                                 JSON.toJSONString(operationCost));
 
@@ -164,7 +167,7 @@ public class FundDataCrawlingService implements DataCrawlingService {
                             JSONObject rate = new JSONObject();
 
                             for (int j = 0; j < rows.size(); j++) {
-                                rate.put(keys.get(j), RateAndDayFormatConvert.convert2Format(rows.get(j).text()));
+                                rate.put(keys.get(j), RateAndDayFormatConverter.convert2Format(rows.get(j).text()));
                             }
                             subscribeRate.add(rate);
                         }
@@ -183,7 +186,7 @@ public class FundDataCrawlingService implements DataCrawlingService {
                             JSONObject rate = new JSONObject();
 
                             for (int j = 0; j < rows.size(); j++) {
-                                rate.put(keys.get(j), RateAndDayFormatConvert.convert2Format(rows.get(j).text()));
+                                rate.put(keys.get(j), RateAndDayFormatConverter.convert2Format(rows.get(j).text()));
                             }
                             purchaseRate.add(rate);
                         }
@@ -202,7 +205,7 @@ public class FundDataCrawlingService implements DataCrawlingService {
                             JSONObject rate = new JSONObject();
 
                             for (int j = 0; j < rows.size(); j++) {
-                                rate.put(keys.get(j), RateAndDayFormatConvert.convert2Format(rows.get(j).text()));
+                                rate.put(keys.get(j), RateAndDayFormatConverter.convert2Format(rows.get(j).text()));
                             }
                             redeemRate.add(rate);
                         }
@@ -281,7 +284,7 @@ public class FundDataCrawlingService implements DataCrawlingService {
 
         JSONObject fundDataHtml = JSON.parseObject(sourceData);
 
-        fundData.setFundType(fundDataHtml.getString(FundDataKey.FUND_TYPE));
+        fundData.setFundType(FundTypeConverter.convert2Model(fundDataHtml.getString(FundDataKey.FUND_TYPE)));
 
         List<Rate> purchaseRate = JSONObject.parseArray(fundDataHtml.getString(FundDataKey.PURCHASE_RATE), Rate.class);
         fundData.setPurchaseRate(purchaseRate);
@@ -306,12 +309,12 @@ public class FundDataCrawlingService implements DataCrawlingService {
         fundData.setMinRedeemShare(TypeConvertUtil.convert2Double(purchaseAndRedeemAmount.getString(FundDataKey.MIN_REDEEM_SHARE)));
 
         JSONObject tradeConfirmDay = fundDataHtml.getJSONObject(FundDataKey.TRADE_CONFIRM_DAY);
-        fundData.setBuyComfirmDay(tradeConfirmDay.getString(FundDataKey.BUY_COMFIRM_DAY));
-        fundData.setRedeemComfirmDay(tradeConfirmDay.getString(FundDataKey.REDEEM_COMFIRM_DAY));
+        fundData.setBuyConfirmDay(ConfirmDayEnum.getEnumByMsg(tradeConfirmDay.getString(FundDataKey.BUY_COMFIRM_DAY)));
+        fundData.setRedeemConfirmDay(ConfirmDayEnum.getEnumByMsg(tradeConfirmDay.getString(FundDataKey.REDEEM_COMFIRM_DAY)));
 
         JSONObject tradeStatus = fundDataHtml.getJSONObject(FundDataKey.TRADE_STATUS);
-        fundData.setPurchaseStatus(tradeStatus.getString(FundDataKey.PURCHASE_STATUS));
-        fundData.setRedeemStatus(tradeStatus.getString(FundDataKey.REDEEM_STATUS));
+        fundData.setPurchaseStatus(PurchaseStatusEnum.getEnumByMsg(tradeStatus.getString(FundDataKey.PURCHASE_STATUS)));
+        fundData.setRedeemStatus(RedeemStatusEnum.getEnumByMsg(tradeStatus.getString(FundDataKey.REDEEM_STATUS)));
 
         return fundData;
     }

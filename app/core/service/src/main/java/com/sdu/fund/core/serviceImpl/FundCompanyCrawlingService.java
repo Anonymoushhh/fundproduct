@@ -63,6 +63,7 @@ public class FundCompanyCrawlingService implements DataCrawlingService {
         return fundCompanies;
     }
 
+    @Override
     public Result save(Object data) {
         List<String> success = Lists.newArrayList();
         List<String> failure = Lists.newArrayList();

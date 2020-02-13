@@ -30,7 +30,7 @@ public class FundManager {
     private List<String> fundNames;
 
     /* 任职天数*/
-    private int serviceDate;
+    private Integer serviceDate;
 
     /* 现任基金资产总规模*/
     private String assetsScale;
@@ -104,11 +104,11 @@ public class FundManager {
         this.fundNames = fundNames;
     }
 
-    public int getServiceDate() {
+    public Integer getServiceDate() {
         return serviceDate;
     }
 
-    public void setServiceDate(int serviceDate) {
+    public void setServiceDate(Integer serviceDate) {
         this.serviceDate = serviceDate;
     }
 

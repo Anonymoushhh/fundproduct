@@ -30,7 +30,7 @@ public class FundArchiveController {
     @SofaReference
     private FundArchiveQueryService fundArchiveQueryService;
 
-    @RequestMapping(value = "/archive", method = RequestMethod.GET)
+    @RequestMapping(value = "/archiveInfoList", method = RequestMethod.GET)
     public Response<FundArchiveVO> queryFundArchive(@RequestParam(value = "fundCode") String fundCode) {
         FundArchiveVO fundArchiveVO = new FundArchiveVO();
         try {

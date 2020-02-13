@@ -35,7 +35,7 @@ public class FundDataRepositoryImpl implements FundDataRepository {
     }
 
     @Override
-    public Result<List<FundData>> getFundList(String fundType, String gainType, Integer curIndex,
+    public Result<List<FundData>> getFundList(Integer fundType, String gainType, Integer curIndex,
                                               Integer pageSize) {
         List<FundData> fundDatas = Lists.newArrayList();
 

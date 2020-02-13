@@ -20,10 +20,19 @@ public class RatesVO {
     private List<Rate> redeemRate;
 
     public RatesVO convert(FundData fundData) {
-        this.managerRate = fundData.getManagerRate() + "%";
-        this.trusteeRate = fundData.getTrusteeRate() + "%";
-        this.serviceRate = fundData.getServiceRate() + "%";
+        if (fundData == null) {
+            return new RatesVO();
+        }
+        this.managerRate = fundData.getManagerRate() != null ? (fundData.getManagerRate() + "%") : "0.0%";
+        this.trusteeRate = fundData.getTrusteeRate() != null ? (fundData.getTrusteeRate() + "%") : "0.0%";
+        this.serviceRate = fundData.getServiceRate() != null ? (fundData.getServiceRate() + "%") : "0.0%";
+        fundData.getPurchaseRate().forEach(rate->{
+            rate.setRate(rate.getRate()+"%");
+        });
         this.purchaseRate = fundData.getPurchaseRate();
+        fundData.getRedeemRate().forEach(rate->{
+            rate.setRate(rate.getRate()+"%");
+        });
         this.redeemRate = fundData.getRedeemRate();
         return this;
     }

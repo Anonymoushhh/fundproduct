@@ -29,7 +29,7 @@ public class FundCompanyController {
     @SofaReference
     private FundCompanyQueryService fundCompanyQueryService;
 
-    @RequestMapping(value = "/fundCompanyInfoList", method = RequestMethod.POST)
+    @RequestMapping(value = "/fundCompanyInfoList", method = RequestMethod.GET)
     public Response<FundCompanyVO> queryFundCompany(@RequestParam(value = "fundCompanyId") String fundCompanyId) {
         FundCompanyVO fundCompanyVO = new FundCompanyVO();
         try {

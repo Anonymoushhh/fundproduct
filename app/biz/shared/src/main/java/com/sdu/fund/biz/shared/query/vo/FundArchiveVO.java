@@ -21,8 +21,10 @@ public class FundArchiveVO {
     private List<BaseEntry> listData;
 
     public FundArchiveVO convert(FundArchive fundArchive) {
+        if(fundArchive==null){
+            return new FundArchiveVO();
+        }
         List<BaseEntry> listData = Lists.newArrayList();
-
         listData.add(new BaseEntry(FundArchiveVOKey.FUND_NAME, fundArchive.getFundName()));
         listData.add(new BaseEntry(FundArchiveVOKey.FUND_NAME_ABBR, fundArchive.getFundNameAbbr()));
         listData.add(new BaseEntry(FundArchiveVOKey.FUND_CODE, fundArchive.getFundCode()));

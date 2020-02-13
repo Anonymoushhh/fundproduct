@@ -39,10 +39,10 @@ public class FundDataKey {
     public static final String MIN_REMAINING_SHARE = "minRemainingShare";
 
     /* 买入确认日*/
-    public static final String BUY_COMFIRM_DAY = "buyComfirmDay";
+    public static final String BUY_COMFIRM_DAY = "buyConfirmDay";
 
     /* 卖出确认日*/
-    public static final String REDEEM_COMFIRM_DAY = "redeemComfirmDay";
+    public static final String REDEEM_COMFIRM_DAY = "redeemConfirmDay";
 
     /* 管理费*/
     public static final String MANAGER_RATE = "managerRate";

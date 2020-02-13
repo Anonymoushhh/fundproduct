@@ -1,5 +1,6 @@
 package com.sdu.fund.controller.wxpages;
 
+import com.alibaba.fastjson.JSON;
 import com.alipay.sofa.runtime.api.annotation.SofaReference;
 import com.google.common.collect.Lists;
 import com.sdu.fund.biz.shared.query.service.FundCommonQueryService;
@@ -11,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -29,10 +31,11 @@ public class FundManagerController {
     @SofaReference
     private FundManagerQueryService fundManagerQueryService;
 
-    @RequestMapping(value = "/managers", method = RequestMethod.POST)
-    public Response<List<FundManagerVO>> queryFundManagers(@RequestBody List<String> managerIds) {
+    @RequestMapping(value = "/managerInfoList", method = RequestMethod.POST,produces="application/json")
+    public Response<List<FundManagerVO>> queryFundManagers(@RequestParam String managerIds) {
+        List<String> managerIdList = JSON.parseArray(managerIds).toJavaList(String.class);
         List<FundManagerVO> fundManagerVOS = Lists.newArrayList();
-        for (String managerId : managerIds) {
+        for (String managerId : managerIdList) {
             FundManagerVO fundManagerVO = new FundManagerVO();
             try {
                 fundManagerVO = fundManagerQueryService.queryFundManagerInfoList(managerId);

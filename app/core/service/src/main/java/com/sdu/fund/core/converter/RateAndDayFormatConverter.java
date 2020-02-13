@@ -11,7 +11,7 @@ import java.util.Map;
  * @author: anonymous
  * @create: 2020/1/27 20:56
  **/
-public class RateAndDayFormatConvert {
+public class RateAndDayFormatConverter {
 
     private static final Map<String,String> convertMap = Maps.newLinkedHashMap();
 
