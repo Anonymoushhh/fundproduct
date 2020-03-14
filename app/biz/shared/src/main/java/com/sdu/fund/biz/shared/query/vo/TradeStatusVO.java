@@ -22,7 +22,7 @@ public class TradeStatusVO {
 
     public TradeStatusVO convert(FundData fundData) {
         if(fundData==null){
-            return new TradeStatusVO();
+            return this;
         }
         List<BaseEntry> listData = Lists.newArrayList();
         listData.add(new BaseEntry(TradeStatusVOKey.PURCHASE_STATUS, fundData.getPurchaseStatus().getMsg()));

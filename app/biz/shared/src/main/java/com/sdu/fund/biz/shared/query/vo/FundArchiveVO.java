@@ -22,7 +22,7 @@ public class FundArchiveVO {
 
     public FundArchiveVO convert(FundArchive fundArchive) {
         if(fundArchive==null){
-            return new FundArchiveVO();
+            return this;
         }
         List<BaseEntry> listData = Lists.newArrayList();
         listData.add(new BaseEntry(FundArchiveVOKey.FUND_NAME, fundArchive.getFundName()));

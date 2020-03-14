@@ -18,7 +18,7 @@ public class RankVO {
 
     public RankVO convert(FundData fundData){
         if(fundData==null){
-            return new RankVO();
+            return this;
         }
         this.fundCode = fundData.getFundCode();
         this.name = fundData.getFundName();

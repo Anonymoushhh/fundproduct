@@ -40,7 +40,7 @@ public class FundManagerRepositoryImpl implements FundManagerRepository {
         }
 
         try {
-            int id = fundManagerMapper.insert(FundManagerConverter.FundManagerconvert2FundManagerDo(fundManager));
+            int id = fundManagerMapper.insertSelective(FundManagerConverter.FundManagerconvert2FundManagerDo(fundManager));
             if (id > 0) {
                 return ResultUtil.buildSuccessResult();
             } else {

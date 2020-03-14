@@ -23,7 +23,7 @@ public class PurchaseStepsVO {
 
     public PurchaseStepsVO convert(FundData fundData) {
         if(fundData==null){
-            return new PurchaseStepsVO();
+            return this;
         }
         List<StepsEntry> listData = Lists.newArrayList();
         listData.add(new StepsEntry(PurchaseStepsVOKey.BUY, "T日"));

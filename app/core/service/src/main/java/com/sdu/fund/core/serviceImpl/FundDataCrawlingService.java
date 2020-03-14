@@ -167,7 +167,8 @@ public class FundDataCrawlingService implements DataCrawlingService {
                             JSONObject rate = new JSONObject();
 
                             for (int j = 0; j < rows.size(); j++) {
-                                rate.put(keys.get(j), RateAndDayFormatConverter.convert2Format(rows.get(j).text()));
+                                rate.put(keys.get(j),
+                                        RateAndDayFormatConverter.convert2Format(rows.get(j).text()));
                             }
                             subscribeRate.add(rate);
                         }
@@ -186,7 +187,8 @@ public class FundDataCrawlingService implements DataCrawlingService {
                             JSONObject rate = new JSONObject();
 
                             for (int j = 0; j < rows.size(); j++) {
-                                rate.put(keys.get(j), RateAndDayFormatConverter.convert2Format(rows.get(j).text()));
+                                rate.put(keys.get(j),
+                                        RateAndDayFormatConverter.convert2Format(rows.get(j).text()));
                             }
                             purchaseRate.add(rate);
                         }
@@ -205,7 +207,8 @@ public class FundDataCrawlingService implements DataCrawlingService {
                             JSONObject rate = new JSONObject();
 
                             for (int j = 0; j < rows.size(); j++) {
-                                rate.put(keys.get(j), RateAndDayFormatConverter.convert2Format(rows.get(j).text()));
+                                rate.put(keys.get(j),
+                                        RateAndDayFormatConverter.convert2Format(rows.get(j).text()));
                             }
                             redeemRate.add(rate);
                         }

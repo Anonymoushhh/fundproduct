@@ -74,7 +74,7 @@ public class FundArchiveRepositoryImpl implements FundArchiveRepository {
         }
 
         try {
-            int id = fundArchiveMapper.insert(FundArchiveConverter.FundArchiveconvert2FundArchiveDo(fundArchive));
+            int id = fundArchiveMapper.insertSelective(FundArchiveConverter.FundArchiveconvert2FundArchiveDo(fundArchive));
             if (id > 0) {
                 return ResultUtil.buildSuccessResult();
             } else {

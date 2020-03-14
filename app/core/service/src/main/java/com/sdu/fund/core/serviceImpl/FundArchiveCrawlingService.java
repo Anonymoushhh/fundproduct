@@ -101,7 +101,7 @@ public class FundArchiveCrawlingService implements DataCrawlingService {
                     fundArchive.add(row.select("td").get(1).text());
                     if (j == 4) {
                         // 获取基金公司id
-                        fundArchive.add(StringUtils.substring(row.select("a").attr("href"), 34, 42));
+                        fundArchive.add(StringUtils.substring(row.select("a").attr("href"), 29, 37));
                     }
                 }
             }
@@ -217,7 +217,7 @@ public class FundArchiveCrawlingService implements DataCrawlingService {
         // 债券代码位数不为7的前面补0
         for (int t = 0; t < zqCodes.size(); t++) {
             String str = zqCodes.get(t);
-            while (str.length() < 7) {
+            while (zqCodes.get(t).length() < 7) {
                 zqCodes.set(t, "0" + str);
             }
         }

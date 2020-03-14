@@ -19,7 +19,7 @@ public class TopMessageVO {
 
     public TopMessageVO convert(FundArchive fundArchive){
         if(fundArchive==null){
-            return new TopMessageVO();
+            return this;
         }
         this.fundName = fundArchive.getFundNameAbbr();
         FundTypeEnum fundTypeEnum = FundTypeEnum.getEnumByMsg(fundArchive.getFundType());

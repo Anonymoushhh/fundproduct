@@ -23,7 +23,7 @@ public class FundCompanyVO {
 
     public FundCompanyVO convert(FundCompany fundCompany) {
         if (fundCompany == null) {
-            return new FundCompanyVO();
+            return this;
         }
         this.fundCompanyName = fundCompany.getFundCompanyName();
         List<BaseEntry> listData = Lists.newArrayList();

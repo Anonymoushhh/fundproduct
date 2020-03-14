@@ -21,7 +21,7 @@ public class FundManagerVO {
 
     public FundManagerVO convert(FundManager fundManager) {
         if (fundManager == null) {
-            return new FundManagerVO();
+            return this;
         }
         this.desc = fundManager.getManagerIntroduction();
         List<BaseEntry> listData = Lists.newArrayList();

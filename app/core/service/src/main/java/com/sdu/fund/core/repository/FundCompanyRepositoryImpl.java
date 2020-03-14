@@ -44,7 +44,7 @@ public class FundCompanyRepositoryImpl implements FundCompanyRepository {
         }
 
         try {
-            int id = fundCompanyMapper.insert(FundCompanyConverter.FundCompanyconvert2FundCompanyDo(fundCompany));
+            int id = fundCompanyMapper.insertSelective(FundCompanyConverter.FundCompanyconvert2FundCompanyDo(fundCompany));
             if (id > 0) {
                 return ResultUtil.buildSuccessResult();
             } else {

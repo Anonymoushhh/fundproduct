@@ -51,7 +51,7 @@ public class RateAndDayFormatConverter {
         String[] split = StringUtils.split(str,"|");
         if(split.length>1){
             // 说明这一个格里有好几个费率，统一取最后一个
-            str = split[split.length-1];
+            str = StringUtils.trim(split[split.length-1]);
         }
         if(StringUtils.contains(str,"小于等于")){
             str = StringUtils.replace(str,"小于等于","");

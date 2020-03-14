@@ -21,7 +21,7 @@ public class RatesVO {
 
     public RatesVO convert(FundData fundData) {
         if (fundData == null) {
-            return new RatesVO();
+            return this;
         }
         this.managerRate = fundData.getManagerRate() != null ? (fundData.getManagerRate() + "%") : "0.0%";
         this.trusteeRate = fundData.getTrusteeRate() != null ? (fundData.getTrusteeRate() + "%") : "0.0%";

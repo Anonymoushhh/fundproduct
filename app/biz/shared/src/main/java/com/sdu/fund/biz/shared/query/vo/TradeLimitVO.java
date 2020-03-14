@@ -23,7 +23,7 @@ public class TradeLimitVO {
 
     public TradeLimitVO convert(FundData fundData) {
         if (fundData == null) {
-            return new TradeLimitVO();
+            return this;
         }
         List<BaseEntry> listData = Lists.newArrayList();
         listData.add(new BaseEntry(TradeLimitVOKey.MIN_PURCHASE_AMOUNT,

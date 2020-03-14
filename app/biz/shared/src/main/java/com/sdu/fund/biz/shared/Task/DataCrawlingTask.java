@@ -8,6 +8,8 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * @program: fundproduct
@@ -16,9 +18,11 @@ import java.util.Date;
  * @create: 2019-11-30 21:54
  **/
 @Component
-public class DataCrawlingTask implements Task{
+public class DataCrawlingTask {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DataCrawlingTask.class);
+
+    public static ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
 
     @SofaReference(uniqueId="fundArchiveCrawlingService")
     private DataCrawlingService fundArchiveCrawlingService;
@@ -32,25 +36,36 @@ public class DataCrawlingTask implements Task{
     @SofaReference(uniqueId="fundManagerCrawlingService")
     private DataCrawlingService fundManagerCrawlingService;
 
-    @Override
-    @Scheduled(cron = "0 0 22 * * ?")
+    @Scheduled(cron = "0 30 11 * * ?")
+    public void fundDataCrawlingTaskExecute() {
+        LOGGER.info("基金数值数据爬取定时任务触发");
+        cachedThreadPool.execute(new Runnable() {
+            @Override
+            public void run() {
+                 fundDataCrawlingService.execute();
+            }
+        });
+    }
+    @Scheduled(cron = "0 0 1 * * ?")
     public void execute() {
-        LOGGER.info("execute task start: " + new Date());
-        //fundArchiveCrawlingService.execute();
+        LOGGER.info("基金数据爬取定时任务触发");
         cachedThreadPool.execute(new Runnable() {
             @Override
             public void run() {
                 fundCompanyCrawlingService.execute();
             }
         });
-//        cachedThreadPool.execute(new Runnable() {
-//            @Override
-//            public void run() {
-//                fundManagerCrawlingService.execute();
-//            }
-//        });
-        // fundDataCrawlingService.execute();
-        //fundManagerCrawlingService.execute();
-        LOGGER.info("execute task end: " + new Date());
+        cachedThreadPool.execute(new Runnable() {
+            @Override
+            public void run() {
+                fundManagerCrawlingService.execute();
+            }
+        });
+        cachedThreadPool.execute(new Runnable() {
+            @Override
+            public void run() {
+                fundArchiveCrawlingService.execute();
+            }
+        });
     }
 }

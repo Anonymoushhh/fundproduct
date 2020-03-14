@@ -21,7 +21,7 @@ public class NetValuesVO {
 
     public NetValuesVO convert(FundData fundData) {
         if (fundData == null) {
-            return new NetValuesVO();
+            return this;
         }
         this.unitNet = fundData.getUnitNet();
         this.accumulatedNet = fundData.getAccumulatedNet();

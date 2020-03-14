@@ -3,6 +3,7 @@ package com.sdu.fund.core.repository;
 import com.google.common.collect.Lists;
 import com.sdu.fund.common.code.ResultCode;
 import com.sdu.fund.common.dal.entity.FundDataDo;
+import com.sdu.fund.common.dal.extMapper.ExtFundDataMapper;
 import com.sdu.fund.common.dal.mapper.FundDataMapper;
 import com.sdu.fund.common.result.Result;
 import com.sdu.fund.common.util.ResultUtil;
@@ -29,6 +30,9 @@ public class FundDataRepositoryImpl implements FundDataRepository {
     @Autowired
     private FundDataMapper fundDataMapper;
 
+    @Autowired
+    private ExtFundDataMapper extFundDataMapper;
+
     @Override
     public FundData get(String fundCode) {
         return FundDataConverter.FundDataDoconvert2FundData(fundDataMapper.selectByPrimaryKey(fundCode));
@@ -40,7 +44,7 @@ public class FundDataRepositoryImpl implements FundDataRepository {
         List<FundData> fundDatas = Lists.newArrayList();
 
         try {
-            List<FundDataDo> fundDataDos = fundDataMapper.selectFundList(fundType, gainType, curIndex, pageSize);
+            List<FundDataDo> fundDataDos = extFundDataMapper.selectFundList(fundType, gainType, curIndex, pageSize);
             for (FundDataDo fundDataDo : fundDataDos) {
                 fundDatas.add(FundDataConverter.FundDataDoconvert2FundData(fundDataDo));
             }
@@ -68,7 +72,7 @@ public class FundDataRepositoryImpl implements FundDataRepository {
         }
 
         try {
-            int id = fundDataMapper.insert(FundDataConverter.FundDataconvert2FundDataDo(fundData));
+            int id = fundDataMapper.insertSelective(FundDataConverter.FundDataconvert2FundDataDo(fundData));
             if (id > 0) {
                 return ResultUtil.buildSuccessResult();
             } else {

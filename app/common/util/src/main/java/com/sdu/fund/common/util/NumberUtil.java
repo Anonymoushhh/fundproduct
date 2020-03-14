@@ -84,6 +84,18 @@ public class NumberUtil {
         return Double.parseDouble(df.format(num));
     }
 
+    /**
+     *
+     * 四舍五入
+     *
+     */
+    public static BigDecimal getBigDecimal_to2_is45(BigDecimal num){
+        return num.setScale(2, BigDecimal.ROUND_HALF_UP);
+    }
+
+    public static BigDecimal getBigDecimal_to2_no45(BigDecimal num){
+        return num.setScale(2, BigDecimal.ROUND_FLOOR);
+    }
 
     /**
      *
@@ -179,6 +191,9 @@ public class NumberUtil {
 
     public static void main(String[] args) {
         System.out.println(getDouble_toNum_is45(2.1323,0));
+        System.out.println(getBigDecimal_to2_is45(new BigDecimal("2.1353")));
+        System.out.println(getBigDecimal_to2_no45(new BigDecimal("2.1323")));
+
     }
 
 }

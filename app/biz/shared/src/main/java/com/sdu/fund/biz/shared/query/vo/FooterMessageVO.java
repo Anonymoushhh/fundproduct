@@ -19,7 +19,7 @@ public class FooterMessageVO {
 
     public FooterMessageVO convert(FundArchive fundArchive){
         if(fundArchive==null){
-            return new FooterMessageVO();
+            return this;
         }
         this.managerIds = fundArchive.getManagerIds();
         this.managerNames = fundArchive.getManagerNames();

@@ -46,7 +46,4 @@ public enum CodeEnum {
         return msg;
     }
 
-    public static void main(String[] args) {
-        getEnumByCode(0);
-    }
 }

@@ -23,7 +23,7 @@ public class RedeemStepsVO {
 
     public RedeemStepsVO convert(FundData fundData) {
         if(fundData==null){
-            return new RedeemStepsVO();
+            return this;
         }
         List<StepsEntry> listData = Lists.newArrayList();
         listData.add(new StepsEntry(PurchaseStepsVOKey.BUY, "T日"));
