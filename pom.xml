@@ -38,7 +38,7 @@
     <properties>
         <!-- jar包版本设置 -->
         <slf4j.version>1.7.21</slf4j.version>
-        <log4j.version>2.11.0</log4j.version>
+        <log4j.version>2.16.0</log4j.version>
     </properties>
     <dependencyManagement>
         <dependencies>
